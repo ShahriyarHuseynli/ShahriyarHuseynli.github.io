@@ -30,7 +30,11 @@
         "title": ""
       },
       "color":{
-        "field": "series"
+        "field": "series",
+        "legend": {
+            "title": "",
+            "orient": "right"
+        }
       }
     }
   }
