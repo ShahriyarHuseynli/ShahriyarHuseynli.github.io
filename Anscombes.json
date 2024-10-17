@@ -1,0 +1,63 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "description": "Anscombe scatterplot",
+  
+     "title": {
+        "text": "Policy impact assessment",
+        "subtitle":["Impact of Policy X on Y","", ""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "subtitleColor":"black",
+        "anchor": "start",
+        "color": "black"},
+  
+      "config": {
+      "background":"white",
+      "view": {
+        "stroke": "transparent"}},
+  
+    
+   
+    "data": {"url": "https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/anscombesQuartet.csv"},
+   
+    "mark": {
+      "type":"point",
+      "color":"rgba(128,0,0,.8)",
+      "size":300},
+  
+    "height":400,
+    "width":400,
+   
+    "encoding": {
+      "x": {
+        "field": "policyX", 
+        "type": "quantitative",
+        "title":"Policy X",
+        "axis": {
+          "title": "Policy X",
+          "grid": false,
+          "labelSeparation": 10
+          }
+          },
+  
+      "y": {
+        "field": "impactY", 
+        "type": "quantitative",
+        "title":"Impact Y",
+        "scale":{"domain":[0,15],"step":[2]},
+        "axis": {
+          "title": "Impact Y",
+          "grid": true,
+          "labelSeparation": 10
+          }},
+      "color":{
+        "field": "Dataset",
+        "type": "nominal",
+        "title":""
+      },
+  
+      "tooltip":
+      [{"field":"areaName", "title":"Area"}]
+     }
+  }
