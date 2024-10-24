@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "US EIA chart. Uses EIA API V2.",
+  
+    "title": {
+      "text": "Renewables - energy generation",
+      "subtitle":"Billion kilowatthours generated. Latvia and Lithuania, Annual. Source: US EIA",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "middle",
+      "color": "black"
+    },
+    
+    "data": {
+        "url": "https://api.eia.gov/v2/international/data/?frequency=annual&data[0]=value&facets[activityId][]=12&facets[countryRegionTypeId][]=c&facets[productId][]=29&facets[countryRegionId][]=LVA&facets[countryRegionId][]=LTU&facets[unit][]=BKWH&start=1990&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000&api_key=u6Xpy3C3IpI2duqoJCCt2AlUir0LY6ndr3EgrZVp",
+        "format":{
+          "type":"json",
+          "property":"response.data"
+        }
+      },
+    
+    "height": 500,
+    "width": 500,
+    
+    "mark": {
+      "type": "line"
+    },
+    
+    "encoding": {
+    
+      "x": {
+        "field": "period",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+  
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Kilowatthours (billions)"
+      },
+
+      "color": {
+        "field": "countryRegionName",
+        "legend": {
+          "title": "Legend",
+          "orient": "right"
+        }
+      }
+    }
+  }

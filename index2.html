@@ -102,6 +102,26 @@
         <figure id="anscombes_figure"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
+    <section>
+        <div class="goods_services">
+            <h2>Section 7: Goods and Services </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+
+            </p>
+        </div>
+        <figure id="goods_services_figure"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="renewables">
+            <h2>Section 8: Renewable energy generation </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+
+            </p>
+        </div>
+        <figure id="renewables_figure"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -129,6 +149,12 @@
 
         let figure_6_spec = "Anscombes.json"
         vegaEmbed('#anscombes_figure', figure_6_spec)
+
+        let figure_7_spec = "goods_services.json"
+        vegaEmbed('#goods_services_figure', figure_7_spec)
+
+        let figure_8_spec = "Renewables.json"
+        vegaEmbed('#renewables_figure', figure_8_spec)
          // We're using the vegaEmbed function to put a graph in the element with id figure_1
 
         // Do you want to add more graphs?
