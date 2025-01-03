@@ -1,67 +1,67 @@
 ,Year,Source_type,Capacity_factor
-0,2013,Geothermal,71.8
-1,2014,Geothermal,72.0
-2,2015,Geothermal,71.9
-3,2016,Geothermal,71.6
-4,2017,Geothermal,73.2
-5,2018,Geothermal,76.0
-6,2019,Geothermal,69.6
-7,2020,Geothermal,69.1
-8,2021,Geothermal,69.8
-9,2022,Geothermal,69.0
-10,2023,Geothermal,69.4
-11,2013,Hydroelectric,38.8
-12,2014,Hydroelectric,37.2
-13,2015,Hydroelectric,35.7
-14,2016,Hydroelectric,38.2
-15,2017,Hydroelectric,43.0
-16,2018,Hydroelectric,41.9
-17,2019,Hydroelectric,41.2
-18,2020,Hydroelectric,40.7
-19,2021,Hydroelectric,36.0
-20,2022,Hydroelectric,36.3
-21,2023,Hydroelectric,35.0
-22,2013,Nuclear,90.8
-23,2014,Nuclear,91.7
-24,2015,Nuclear,92.3
-25,2016,Nuclear,92.3
-26,2017,Nuclear,92.3
-27,2018,Nuclear,92.5
-28,2019,Nuclear,93.4
-29,2020,Nuclear,92.4
-30,2021,Nuclear,92.8
-31,2022,Nuclear,92.7
-32,2023,Nuclear,93.0
-33,2013,Solar Photovoltaic,24.5
-34,2014,Solar Photovoltaic,25.6
-35,2015,Solar Photovoltaic,25.5
-36,2016,Solar Photovoltaic,25.0
-37,2017,Solar Photovoltaic,25.6
-38,2018,Solar Photovoltaic,25.1
-39,2019,Solar Photovoltaic,24.3
-40,2020,Solar Photovoltaic,24.2
-41,2021,Solar Photovoltaic,24.4
-42,2022,Solar Photovoltaic,24.4
-43,2023,Solar Photovoltaic,23.2
-44,2013,Solar Thermal,17.4
-45,2014,Solar Thermal,18.3
-46,2015,Solar Thermal,21.7
-47,2016,Solar Thermal,22.1
-48,2017,Solar Thermal,21.8
-49,2018,Solar Thermal,23.6
-50,2019,Solar Thermal,21.2
-51,2020,Solar Thermal,20.6
-52,2021,Solar Thermal,20.5
-53,2022,Solar Thermal,23.1
-54,2023,Solar Thermal,22.1
-55,2013,Wind,32.4
-56,2014,Wind,34.0
-57,2015,Wind,32.2
-58,2016,Wind,34.5
-59,2017,Wind,34.6
-60,2018,Wind,34.6
-61,2019,Wind,34.4
-62,2020,Wind,35.3
-63,2021,Wind,34.4
-64,2022,Wind,35.9
-65,2023,Wind,33.2
+0,2013,Geothermal,0.718
+1,2014,Geothermal,0.72
+2,2015,Geothermal,0.7190000000000001
+3,2016,Geothermal,0.716
+4,2017,Geothermal,0.732
+5,2018,Geothermal,0.76
+6,2019,Geothermal,0.696
+7,2020,Geothermal,0.691
+8,2021,Geothermal,0.698
+9,2022,Geothermal,0.69
+10,2023,Geothermal,0.6940000000000001
+11,2013,Hydroelectric,0.38799999999999996
+12,2014,Hydroelectric,0.37200000000000005
+13,2015,Hydroelectric,0.35700000000000004
+14,2016,Hydroelectric,0.382
+15,2017,Hydroelectric,0.43
+16,2018,Hydroelectric,0.419
+17,2019,Hydroelectric,0.41200000000000003
+18,2020,Hydroelectric,0.40700000000000003
+19,2021,Hydroelectric,0.36
+20,2022,Hydroelectric,0.363
+21,2023,Hydroelectric,0.35
+22,2013,Nuclear,0.9079999999999999
+23,2014,Nuclear,0.917
+24,2015,Nuclear,0.9229999999999999
+25,2016,Nuclear,0.9229999999999999
+26,2017,Nuclear,0.9229999999999999
+27,2018,Nuclear,0.925
+28,2019,Nuclear,0.934
+29,2020,Nuclear,0.924
+30,2021,Nuclear,0.9279999999999999
+31,2022,Nuclear,0.927
+32,2023,Nuclear,0.93
+33,2013,Solar Photovoltaic,0.245
+34,2014,Solar Photovoltaic,0.256
+35,2015,Solar Photovoltaic,0.255
+36,2016,Solar Photovoltaic,0.25
+37,2017,Solar Photovoltaic,0.256
+38,2018,Solar Photovoltaic,0.251
+39,2019,Solar Photovoltaic,0.243
+40,2020,Solar Photovoltaic,0.242
+41,2021,Solar Photovoltaic,0.244
+42,2022,Solar Photovoltaic,0.244
+43,2023,Solar Photovoltaic,0.23199999999999998
+44,2013,Solar Thermal,0.174
+45,2014,Solar Thermal,0.183
+46,2015,Solar Thermal,0.217
+47,2016,Solar Thermal,0.221
+48,2017,Solar Thermal,0.218
+49,2018,Solar Thermal,0.23600000000000002
+50,2019,Solar Thermal,0.212
+51,2020,Solar Thermal,0.20600000000000002
+52,2021,Solar Thermal,0.205
+53,2022,Solar Thermal,0.231
+54,2023,Solar Thermal,0.221
+55,2013,Wind,0.324
+56,2014,Wind,0.34
+57,2015,Wind,0.322
+58,2016,Wind,0.345
+59,2017,Wind,0.34600000000000003
+60,2018,Wind,0.34600000000000003
+61,2019,Wind,0.344
+62,2020,Wind,0.353
+63,2021,Wind,0.344
+64,2022,Wind,0.359
+65,2023,Wind,0.332
