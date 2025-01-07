@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+    "data": {
+    "values": [
+      {"year": "2020", "sold": 7193, "price": 900000},
+      {"year": "2021", "sold": 10929, "price": 1030000},
+      {"year": "2022", "sold": 9028, "price": 1330000},
+      {"year": "2023", "sold": 4783, "price": 1010000}
+    ]
+  },
+  "title": {
+    "text": "Average Home Prices - February",
+    "subtitle": "in the Greater Toronto Area",
+    "subtitlePadding": 10,
+    "offset": 10
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative",
+      "axis": {
+        "title": "Price",
+        "format": "$s"
+      }
+      },
+    "size": {
+      "field": "sold",
+      "type": "quantitative",
+      "legend": {
+        "title": "Units sold"
+      }
+    }
+  }
+}

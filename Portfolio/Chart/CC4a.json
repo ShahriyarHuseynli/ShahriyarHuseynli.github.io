@@ -1,0 +1,79 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+    "data": {
+      "values": [
+        {"year": 2020, "price": 900000},
+        {"year": 2021, "price": 1030000},
+        {"year": 2022, "price": 1330000},
+        {"year": 2023, "price": 1010000}
+      ]
+    },
+    "width": 300,
+    "height": 200,
+    "title": {
+      "text": "Average Home Prices - February",
+      "fontSize": 20,
+      "subtitle": "in the Greater Toronto Area",
+      "subtitleFontSize": 14
+    },
+    "encoding": {
+      "y": {
+        "field": "price",
+        "type": "quantitative",
+        "scale": {
+          "domain": [775000, 1400000],
+          "nice": false,
+          "clamp": true
+        },
+        "axis": {
+          "values": [775000, 850000, 925000, 1000000, 1075000, 1150000, 1225000, 1300000, 1375000],
+          "format": "$,f",
+          "title":null,
+          "labelFontStyle": "bold"
+        }
+      },
+      "x": {
+        "field": "year",
+        "type": "quantitative",
+        "axis": {
+          "labelExpr": "datum.value == 2020 ? '7,193' : datum.value == 2021 ? '10,929' : datum.value == 2022 ? '9,028' : datum.value == 2023 ? '4,783' : datum.value",
+          "title": "Units sold",
+          "labelFontStyle": "bold",
+          "values": [2020, 2021, 2022, 2023],
+          "grid": false
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "baseline": "middle",
+          "color": "#8b2125"
+        },
+        "encoding": {
+          "size": {
+            "value": 50
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "top",
+          "size": 12,
+          "fontWeight": "bolder",
+          "color": "white",
+          "dy": 10
+        },
+        "encoding": {
+          "text": {
+            "field": "year",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }

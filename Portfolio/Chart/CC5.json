@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/Portfolio/Data/bs_uranium_mines.csv"},
+  "title": {
+    "text": "The largest-producing uranium mines in 2022",
+    "align": "center",
+    "fontSize": 15,
+    "offset": 15,
+    "anchor": "middle"
+  },
+  "width": 400,
+  "height": 300,
+  "padding": 10,
+  "mark": "bar",
+  "transform": [
+    {
+      "calculate": "parseFloat(datum.Production)",
+      "as": "Production"
+    },
+    {
+      "calculate": "parseFloat(datum.Share)",
+      "as": "Share"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "title": "Tonnes U",
+      "field": "Production",
+      "type": "quantitative",
+      "axis": {"format": "f"}
+    },
+    "y": {
+      "field": "Mine",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "titleFontSize": 14,
+        "labelFontSize": 12,
+        "titlePadding": 10,
+        "labelPadding": 5,
+        "tickSize": 10
+      },
+      "sort": {
+        "field": "Production",
+        "order": "descending"
+      }
+    },
+    "color": {
+      "field": "Country",
+      "scale": {
+        "scheme": "category10"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Production",
+        "type": "quantitative",
+        "format": "0.4s",
+        "title": "Produced:"
+      },
+      {
+        "field": "Share",
+        "type": "quantitative",
+        "format": "0.0%",
+        "title": "Share of world:"
+      }
+    ]
+  }
+}
