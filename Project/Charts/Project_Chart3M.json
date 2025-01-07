@@ -1,0 +1,110 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/Project/Data/pd_capacity_factors.csv"
+    },
+    "width": 140,
+    "height": 100,
+    "padding": 10,
+    "encoding": {
+        "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+            "title": "Year",
+            "format": "%Y",
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "titlePadding": 10,
+            "labelPadding": 5,
+            "tickSize": 10,
+          "labelAngle": -45
+        }
+      }
+    },
+    "layer": [
+        {
+        "encoding": {
+            "color": {
+            "field": "Source_type",
+            "type": "nominal",
+            "scale": {
+                "scheme": "category10"
+            },
+            "legend": {
+                "title": "",
+                "titleFontSize": 11,
+                "labelFontSize": 11,
+                "symbolSize": 12,
+                "orient": "none",
+                "columns": 2,
+                "legendX": -50,
+                "legendY": 180
+            }
+            },
+            "y": {
+            "field": "Capacity_factor",
+            "type": "quantitative",
+            "axis":{
+                "format": "%",
+                "title": "Capacity factor as %",
+                "titleFontSize": 11,
+                "labelFontSize": 11,
+                "titlePadding": 10,
+                "labelPadding": 5,
+                "tickSize": 10
+                }
+            }
+        },
+        "layer": [
+            {
+                "mark": {
+                    "type": "circle",
+                    "point": {
+                        "filled": true
+                    },
+                    "size": 30
+                }
+            },
+            {"transform": [{"filter": {"param": "hover", "empty": false}}], 
+            "mark": {
+            "type": "point",
+            "filled": false,
+            "fill": "white",
+            "opacity": 1,
+            "size": 300
+            }
+            }
+        ]
+        },
+        {
+        "transform": [{"pivot": "Source_type", "value": "Capacity_factor", "groupby": ["Year"]}],
+        "mark": "rule",
+        "encoding": {
+            "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+            },
+            "tooltip": [
+            {"field": "Year", "type": "temporal", "format":"%Y", "title": "Year:"},
+            {"field": "Nuclear", "type": "quantitative", "format": "0.1%", "title": "Nuclear:"},
+            {"field": "Geothermal", "type": "quantitative", "format": "0.1%", "title": "Geothermal:"},
+            {"field": "Hydroelectric", "type": "quantitative", "format": "0.1%", "title": "Hydroelectric:"},
+            {"field": "Wind", "type": "quantitative", "format": "0.1%", "title": "Wind:"},
+            {"field": "Solar Photovoltaic", "type": "quantitative", "format": "0.1%", "title": "Solar Photovoltaic:"},
+            {"field": "Solar Thermal", "type": "quantitative", "format": "0.1%", "title": "Solar Thermal:"}
+            ]
+        },
+        "params": [{
+            "name": "hover",
+            "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+            }
+        }]
+        }
+    ]
+}

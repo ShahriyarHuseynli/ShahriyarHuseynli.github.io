@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {
+    "values": [
+      {"Year": "2009", "Source": "Nuclear", "LCOE": 123},
+      {"Year": "2010", "Source": "Nuclear", "LCOE": 96},
+      {"Year": "2011", "Source": "Nuclear", "LCOE": 95},
+      {"Year": "2012", "Source": "Nuclear", "LCOE": 96},
+      {"Year": "2013", "Source": "Nuclear", "LCOE": 104},
+      {"Year": "2014", "Source": "Nuclear", "LCOE": 112},
+      {"Year": "2015", "Source": "Nuclear", "LCOE": 117},
+      {"Year": "2016", "Source": "Nuclear", "LCOE": 117},
+      {"Year": "2017", "Source": "Nuclear", "LCOE": 148},
+      {"Year": "2018", "Source": "Nuclear", "LCOE": 151},
+      {"Year": "2019", "Source": "Nuclear", "LCOE": 155},
+      {"Year": "2020", "Source": "Nuclear", "LCOE": 163},
+      {"Year": "2021", "Source": "Nuclear", "LCOE": 167},
+      {"Year": "2023", "Source": "Nuclear", "LCOE": 180},
+      {"Year": "2024", "Source": "Nuclear", "LCOE": 182},
+      {"Year": "2009", "Source": "Solar", "LCOE": 359},
+      {"Year": "2010", "Source": "Solar", "LCOE": 248},
+      {"Year": "2011", "Source": "Solar", "LCOE": 157},
+      {"Year": "2012", "Source": "Solar", "LCOE": 125},
+      {"Year": "2013", "Source": "Solar", "LCOE": 98},
+      {"Year": "2014", "Source": "Solar", "LCOE": 79},
+      {"Year": "2015", "Source": "Solar", "LCOE": 64},
+      {"Year": "2016", "Source": "Solar", "LCOE": 55},
+      {"Year": "2017", "Source": "Solar", "LCOE": 50},
+      {"Year": "2018", "Source": "Solar", "LCOE": 43},
+      {"Year": "2019", "Source": "Solar", "LCOE": 40},
+      {"Year": "2020", "Source": "Solar", "LCOE": 37},
+      {"Year": "2021", "Source": "Solar", "LCOE": 36},
+      {"Year": "2023", "Source": "Solar", "LCOE": 60},
+      {"Year": "2024", "Source": "Solar", "LCOE": 61},
+      {"Year": "2009", "Source": "Wind", "LCOE": 135},
+      {"Year": "2010", "Source": "Wind", "LCOE": 124},
+      {"Year": "2011", "Source": "Wind", "LCOE": 71},
+      {"Year": "2012", "Source": "Wind", "LCOE": 72},
+      {"Year": "2013", "Source": "Wind", "LCOE": 70},
+      {"Year": "2014", "Source": "Wind", "LCOE": 59},
+      {"Year": "2015", "Source": "Wind", "LCOE": 55},
+      {"Year": "2016", "Source": "Wind", "LCOE": 47},
+      {"Year": "2017", "Source": "Wind", "LCOE": 45},
+      {"Year": "2018", "Source": "Wind", "LCOE": 42},
+      {"Year": "2019", "Source": "Wind", "LCOE": 41},
+      {"Year": "2020", "Source": "Wind", "LCOE": 40},
+      {"Year": "2021", "Source": "Wind", "LCOE": 38},
+      {"Year": "2023", "Source": "Wind", "LCOE": 50},
+      {"Year": "2024", "Source": "Wind", "LCOE": 50}
+    ]
+  },
+  "width": 140,
+  "height": 100,
+  "padding": 10,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "titleFontSize": 11,
+        "labelFontSize": 11,
+        "titlePadding": 10,
+        "labelPadding": 5,
+        "tickSize": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Source",
+          "type": "nominal",
+          "scale": {
+            "scheme": "category10"
+          },
+          "legend": {
+            "title": "",
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "titlePadding": 10,
+            "rowPadding": 8,
+            "symbolSize": 20,
+            "orient": "none",
+            "columns": 3,
+            "legendX": -15,
+            "legendY": 160
+          }
+        },
+        "y": {
+          "field": "LCOE",
+          "type": "quantitative",
+          "axis":{
+            "title": "USD per MWh",
+            "labelExpr": "'$'+datum.label",
+            "titleFontSize": 11,
+            "labelFontSize": 11,
+            "titlePadding": 10,
+            "labelPadding": 5,
+            "tickSize": 10
+            }
+          }
+      },
+      "layer": [
+        {"mark": {
+          "type": "line",
+          "point": {
+            "filled": true
+          }
+        }},
+        {"transform": [{"filter": {"param": "hover", "empty": false}}], 
+        "mark": {
+          "type": "point",
+          "filled": false,
+          "fill": "white",
+          "opacity": 1,
+          "size": 300
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"pivot": "Source", "value": "LCOE", "groupby": ["Year"]}],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Year", "type": "temporal", "format":"%Y", "title": "Year:"},
+          {"field": "Nuclear", "type": "quantitative", "format": "$", "title": "Nuclear:"},
+          {"field": "Solar", "type": "quantitative", "format": "$", "title": "Solar:"},
+          {"field": "Wind", "type": "quantitative", "format": "$", "title": "Wind:"}
+        ]
+      },
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "pointerover",
+          "clear": "pointerout"
+        }
+      }]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Two horizontally concatenated scatterplots showing Greenhouse gas emissions and death rates by energy source stype",
 
-  "padding": 20,
+  "padding": 10,
   "data": {
       "values": [
         {"Source": "Coal", "Death_rate": 24.6, "Emissions": 970},
@@ -31,15 +31,15 @@
         "opacity": 1,
         "size": 350
       },
-      "width": 400,
-      "height": 300,
+      "width": 140,
+      "height": 100,
       "encoding": {
         "x": {
           "field": "Emissions",
           "type": "quantitative",
           "axis":{
             "title": "Tonnes per GWh",
-            "titleFontSize": 14,
+            "titleFontSize": 11,
             "labelFontSize": 12,
             "titlePadding": 10,
             "labelPadding": 5,
@@ -52,7 +52,7 @@
           "axis":{
             "title": "Deaths per TWh",
             "format": "0.1f",
-            "titleFontSize": 14,
+            "titleFontSize": 11,
             "labelFontSize": 12,
             "titlePadding": 10,
             "labelPadding": 5,
@@ -71,12 +71,13 @@
           "legend": {
             "title": "",
             "orient": "none",
-            "columns": 4,
-            "labelFontSize": 14,
+            "columns": 2,
+            "labelFontSize": 12,
             "columnPadding": 40,
             "rowPadding": 10,
-            "legendX": -10,
-            "legendY": 375
+            "legendX": -30,
+            "legendY": 165,
+            "symbolSize": 70
           }
         },
         "tooltip":[
@@ -88,28 +89,28 @@
     },
     {
       "title": {
-        "text": [" ", " "],
+        "text": [" ", " ", " ", " "],
         "subtitle": "Safest 3 sources",
         "subtitleFontStyle": "italic",
         "align": "center",
         "subtitleFontSize": 15,
         "subtitlePadding": 40,
-        "offset": 5
+        "offset": 10
       },
       "mark": {
         "type": "circle",
         "opacity": 1,
         "size": 350
       },
-      "width": 400,
-      "height": 300,
+      "width": 140,
+      "height": 100,
       "encoding": {
         "x": {
           "field": "Emissions",
           "type": "quantitative",
           "axis":{
             "title":"Tonnes per GWh",
-            "titleFontSize": 14,
+            "titleFontSize": 11,
             "labelFontSize": 12,
             "titlePadding": 10,
             "labelPadding": 5,
@@ -125,8 +126,8 @@
           "axis":{
             "title": "Deaths per TWh",
             "format": "0.2f",
-            "titleFontSize": 14,
-            "labelFontSize": 12,
+            "titleFontSize": 11,
+            "labelFontSize": 10,
             "titlePadding": 10,
             "labelPadding": 5,
             "tickSize": 10

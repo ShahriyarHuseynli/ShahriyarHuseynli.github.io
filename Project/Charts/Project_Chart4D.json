@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/Project/Data/pd_uranium_production.csv"},
+  "title": {
+    "text": {
+      "expr": "'Uranium production in '+year_filter+':'"
+    },
+    "align": "center",
+    "fontSize": 15,
+    "offset": 15,
+    "anchor": "middle"
+  },
+  "width": 400,
+  "height": 300,
+  "padding": 10,
+  "params": [
+    {
+      "name": "year_filter",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2013,
+        "max": 2022,
+        "step": 1,
+        "name": "Year filter: "
+      }
+    },
+    {
+      "name": "rank_filter",
+      "value": 10,
+      "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "name": "Top-K filter: "
+      }
+    }
+  ],
+  "mark": "bar",
+  "transform": [
+    {
+      "calculate": "parseFloat(datum.production)",
+      "as": "prod"
+    },
+    {
+      "window": [{"op": "row_number", "as": "rank"}],
+      "groupby": ["year"],
+      "sort": [
+        {
+          "field": "prod",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.year==year_filter"
+    },
+    {
+      "filter": "datum.rank<=rank_filter"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "title": "Tonnes U",
+      "aggregate": "sum",
+      "field": "prod",
+      "type": "quantitative",
+      "axis": {"format": "s"},
+      "scale": {
+        "domain": [0, 25000]
+      }
+    },
+    "y": {
+      "field": "country",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "titleFontSize": 14,
+        "labelFontSize": 12,
+        "titlePadding": 10,
+        "labelPadding": 5,
+        "tickSize": 10
+      },
+      "sort": {
+        "op": "sum",
+        "field": "prod",
+        "order": "descending"
+      }
+    },
+    "color": {
+      "scale": {
+        "scheme": "category10"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "sum_prod",
+        "type": "quantitative",
+        "format": "0.4s",
+        "title": "Produced:"
+      }
+    ]
+  }
+}
