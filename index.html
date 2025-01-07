@@ -1,154 +1,3204 @@
 <!DOCTYPE html>
-<html> 
-<head>    
-    <!-- The head tag links to resources our page needs and defines information about it. 
-     Tags in the <head> aren't displayed on the page. -->
-
-    <!-- This is a link to a stylesheet which contains rules about how each element 
-     on the page should be defined-->
-    
-    <!-- Try swapping example1.css to another, and take a look at example1.css 
-     to see if you understand it-->
-     
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <title> Not ready yet... </title> <!-- The title displayed in the browser tab, not on the page itself -->
-    
-    <!-- This is a link to the Bootstrap which we're using to make our website prettier -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- This is a link to the Bootstrap script which we're using to ensure Bootstrap modules function -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <!-- This is a link to the css for space elements -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><link rel="stylesheet" href="./style.css">
-    
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-        
-    </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 </head>
+<body>
+      
+    <!-- <div class="background"></div> -->
+    <div class="page page-Home">
+      <svg
+         id="bg"
+         viewBox="0 0 2600 1080"
+         shape-rendering="geometricPrecision"
+         text-rendering="geometricPrecision"
+         project-id="412b59a1644443d4a9f260666f05cd49"
+         export-id="03510fb0fe0142869d2260ce490790f2"
+         cached="false"
+         version="1.1"
+         sodipodi:docname="bg.svg"
+         inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview1"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:zoom="0.69153846"
+         inkscape:cx="1218.2981"
+         inkscape:cy="657.23026"
+         inkscape:window-width="1920"
+         inkscape:window-height="974"
+         inkscape:window-x="-11"
+         inkscape:window-y="-11"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="bg-u-boardgroup" />
+      <defs
+         id="defs1">
+         <rect
+            id="bg-u-svgid_1_"
+            width="700"
+            height="450"
+            rx="0"
+            ry="0" />
+         <path
+            id="bg-u-svgid_00000045581309257158306430000005884124911577253256_2"
+            d="M272.457,313.044c.045,1.822-6.999,3.476-15.735,3.694-8.735.218-15.854-1.083-15.899-2.906-.045-1.822,6.999-3.476,15.735-3.694c8.735-.218,15.853,1.083,15.899,2.906Z" />
+         <path
+            id="bg-u-svgid_00000173867549299182838330000008531118779392084884_2"
+            d="M249.145,276.539c0,2.115-1.839,3.829-4.106,3.829-2.268,0-4.106-1.714-4.106-3.829s1.838-3.829,4.106-3.829c2.267,0,4.106,1.714,4.106,3.829Z" />
+         <linearGradient
+            id="bg-s-polygon1-fill"
+            x1="0"
+            y1="367.5138"
+            x2="700"
+            y2="367.5138"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon1-fill-0"
+               offset="0%"
+               stop-color="#f4ba7a" />
+            <stop
+               id="bg-s-polygon1-fill-1"
+               offset="100%"
+               stop-color="#eb6f4a" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon31-fill"
+            x1="333.9769"
+            y1="284.4242"
+            x2="333.9769"
+            y2="67.1962"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon31-fill-0"
+               offset="0%"
+               stop-color="#ffa651" />
+            <stop
+               id="bg-s-polygon31-fill-1"
+               offset="100%"
+               stop-color="#fb7f4a" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon33-fill"
+            x1="577.72"
+            y1="362.6293"
+            x2="577.72"
+            y2="0"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon33-fill-0"
+               offset="0%"
+               stop-color="#ffe261" />
+            <stop
+               id="bg-s-polygon33-fill-1"
+               offset="100%"
+               stop-color="#fb9e57" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon34-fill"
+            x1="0"
+            y1="321.5604"
+            x2="700"
+            y2="321.5604"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon34-fill-0"
+               offset="0%"
+               stop-color="#ffffd3" />
+            <stop
+               id="bg-s-polygon34-fill-1"
+               offset="100%"
+               stop-color="#ffdcc2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon36-fill"
+            x1="93.2198"
+            y1="256.1427"
+            x2="93.2198"
+            y2="59.2006"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon36-fill-0"
+               offset="0%"
+               stop-color="#ffb" />
+            <stop
+               id="bg-s-polygon36-fill-1"
+               offset="100%"
+               stop-color="#ffcfa9" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon37-fill"
+            x1="95.6941"
+            y1="244"
+            x2="95.6941"
+            y2="68.6338"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon37-fill-0"
+               offset="0%"
+               stop-color="#ffb575" />
+            <stop
+               id="bg-s-polygon37-fill-1"
+               offset="100%"
+               stop-color="#fb8b57" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon38-fill"
+            x1="47"
+            y1="234.5"
+            x2="144.3882"
+            y2="234.5"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon38-fill-0"
+               offset="0%"
+               stop-color="#ffb" />
+            <stop
+               id="bg-s-polygon38-fill-1"
+               offset="100%"
+               stop-color="#ffe2a9" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon41-fill"
+            x1="47"
+            y1="157.9165"
+            x2="107.5"
+            y2="157.9165"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon41-fill-0"
+               offset="0%"
+               stop-color="#ffb" />
+            <stop
+               id="bg-s-polygon41-fill-1"
+               offset="100%"
+               stop-color="#ffcfa9" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon42-fill"
+            x1="47.3914"
+            y1="141.5529"
+            x2="103.5838"
+            y2="141.5529"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon42-fill-0"
+               offset="0%"
+               stop-color="#ffb" />
+            <stop
+               id="bg-s-polygon42-fill-1"
+               offset="100%"
+               stop-color="#ffcfa9" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon43-fill"
+            x1="47"
+            y1="82.5669"
+            x2="140.1476"
+            y2="82.5669"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon43-fill-0"
+               offset="0%"
+               stop-color="#ffb" />
+            <stop
+               id="bg-s-polygon43-fill-1"
+               offset="100%"
+               stop-color="#ffe2a9" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon44-fill"
+            x1="47"
+            y1="83.7031"
+            x2="136.2557"
+            y2="83.7031"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon44-fill-0"
+               offset="0%"
+               stop-color="#ffffd3" />
+            <stop
+               id="bg-s-polygon44-fill-1"
+               offset="100%"
+               stop-color="#ffdcc2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon46-fill"
+            x1="47.3125"
+            y1="138.5833"
+            x2="132.5625"
+            y2="138.5833"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon46-fill-0"
+               offset="0%"
+               stop-color="#ffffd3" />
+            <stop
+               id="bg-s-polygon46-fill-1"
+               offset="100%"
+               stop-color="#ffdcc2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon47-fill"
+            x1="47.625"
+            y1="196.3125"
+            x2="133.9375"
+            y2="196.3125"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon47-fill-0"
+               offset="0%"
+               stop-color="#ffffd3" />
+            <stop
+               id="bg-s-polygon47-fill-1"
+               offset="100%"
+               stop-color="#ffdcc2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon52-fill"
+            x1="115.3141"
+            y1="295.9346"
+            x2="89.1708"
+            y2="191.0793"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon52-fill-0"
+               offset="0%"
+               stop-color="#000" />
+            <stop
+               id="bg-s-polygon52-fill-1"
+               offset="100%"
+               stop-color="#a9a76a" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon56-fill"
+            x1="466.4596"
+            y1="179.3217"
+            x2="558.9345"
+            y2="179.3217"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon56-fill-0"
+               offset="0%"
+               stop-color="#b1382a" />
+            <stop
+               id="bg-s-polygon56-fill-1"
+               offset="100%"
+               stop-color="#7b2738" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon58-fill"
+            x1="515.7606"
+            y1="247.5722"
+            x2="507.1812"
+            y2="114.7408"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon58-fill-0"
+               offset="0%"
+               stop-color="#0e3927" />
+            <stop
+               id="bg-s-polygon58-fill-1"
+               offset="100%"
+               stop-color="#435943" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon60-fill"
+            x1="511.1753"
+            y1="245.2681"
+            x2="511.1753"
+            y2="240.7592"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon60-fill-0"
+               offset="0%"
+               stop-color="#ffe261" />
+            <stop
+               id="bg-s-polygon60-fill-1"
+               offset="100%"
+               stop-color="#fb9e57" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon61-fill"
+            x1="489.7781"
+            y1="157.022"
+            x2="489.7781"
+            y2="134.1861"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon61-fill-0"
+               offset="0%"
+               stop-color="#ffcfa9" />
+            <stop
+               id="bg-s-polygon61-fill-1"
+               offset="100%"
+               stop-color="#ffb" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon66-fill"
+            x1="489.7781"
+            y1="157.022"
+            x2="489.7781"
+            y2="134.1861"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse">
+            <stop
+               id="bg-s-polygon66-fill-0"
+               offset="0%"
+               stop-color="#ffcfa9" />
+            <stop
+               id="bg-s-polygon66-fill-1"
+               offset="100%"
+               stop-color="#ffb" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon72-fill"
+            x1="536.8911"
+            y1="239.6753"
+            x2="536.8911"
+            y2="216.8394"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon72-fill-0"
+               offset="0%"
+               stop-color="#ffcfa9" />
+            <stop
+               id="bg-s-polygon72-fill-1"
+               offset="100%"
+               stop-color="#ffb" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon78-fill"
+            x1="165.28"
+            y1="326.844"
+            x2="519.8409"
+            y2="326.844"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon78-fill-0"
+               offset="0%"
+               stop-color="#b1382a" />
+            <stop
+               id="bg-s-polygon78-fill-1"
+               offset="100%"
+               stop-color="#7b2738" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon80-fill"
+            x1="183"
+            y1="326.8925"
+            x2="490.5"
+            y2="326.8925"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon80-fill-0"
+               offset="0%"
+               stop-color="#000" />
+            <stop
+               id="bg-s-polygon80-fill-1"
+               offset="100%"
+               stop-color="#a9a76a" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon84-fill"
+            x1="397.9278"
+            y1="342.185"
+            x2="397.9278"
+            y2="330.6855"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon84-fill-0"
+               offset="0%"
+               stop-color="#ffcfa9" />
+            <stop
+               id="bg-s-polygon84-fill-1"
+               offset="100%"
+               stop-color="#ffb" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-polygon87-fill"
+            cx="0"
+            cy="0"
+            r="106.3608"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(322.3334 312.6003)">
+            <stop
+               id="bg-s-polygon87-fill-0"
+               offset="0%"
+               stop-color="#3b6a89" />
+            <stop
+               id="bg-s-polygon87-fill-1"
+               offset="100%"
+               stop-color="#14133e" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-polygon88-fill"
+            x1="310.703"
+            y1="327.2537"
+            x2="454.0638"
+            y2="327.2537"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon88-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon88-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon88-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon89-fill"
+            x1="331.353"
+            y1="321.6892"
+            x2="451.9558"
+            y2="321.6892"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon89-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon89-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon89-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon90-fill"
+            x1="320.9373"
+            y1="318.0772"
+            x2="450.1476"
+            y2="318.0772"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon90-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon90-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon90-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon91-fill"
+            x1="332.953"
+            y1="319.3522"
+            x2="344.453"
+            y2="319.3522"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon91-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon91-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon91-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon92-fill"
+            x1="395.2396"
+            y1="319.394"
+            x2="405.078"
+            y2="319.394"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon92-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon92-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon92-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon97-fill"
+            x1="345.8226"
+            y1="319.2504"
+            x2="354.9113"
+            y2="319.2504"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon97-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon97-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon97-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon98-fill"
+            x1="354.453"
+            y1="319.2504"
+            x2="360.3697"
+            y2="319.2504"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon98-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon98-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon98-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon99-fill"
+            x1="379.8707"
+            y1="315.2881"
+            x2="399.926"
+            y2="315.2881"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon99-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon99-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon99-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon101-fill"
+            x1="313.578"
+            y1="318.031"
+            x2="441.843"
+            y2="318.031"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon101-fill-0"
+               offset="0%"
+               stop-color="#bab7c2" />
+            <stop
+               id="bg-s-polygon101-fill-1"
+               offset="100%"
+               stop-color="#000" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-path20-fill"
+            cx="0"
+            cy="0"
+            r="20.3679"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(464.3791 323.4213)">
+            <stop
+               id="bg-s-path20-fill-0"
+               offset="0%"
+               stop-color="#3b6a89" />
+            <stop
+               id="bg-s-path20-fill-1"
+               offset="100%"
+               stop-color="#14133e" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path21-fill"
+            x1="463.1451"
+            y1="324.8706"
+            x2="484.9051"
+            y2="324.8706"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path21-fill-0"
+               offset="0%"
+               stop-color="#bab7c2" />
+            <stop
+               id="bg-s-path21-fill-1"
+               offset="100%"
+               stop-color="#000" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path22-fill"
+            x1="464.2156"
+            y1="330.7371"
+            x2="476.5616"
+            y2="330.7371"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path22-fill-0"
+               offset="0%"
+               stop-color="#e5e0c9" />
+            <stop
+               id="bg-s-path22-fill-1"
+               offset="100%"
+               stop-color="#6f6f86" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path23-fill"
+            x1="465.7751"
+            y1="331.591"
+            x2="486.6851"
+            y2="331.591"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path23-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-path23-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-path23-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-polygon103-fill"
+            cx="0"
+            cy="0"
+            r="51.4628"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(431.736 290.611)">
+            <stop
+               id="bg-s-polygon103-fill-0"
+               offset="0%"
+               stop-color="#3d6a78" />
+            <stop
+               id="bg-s-polygon103-fill-1"
+               offset="36.85%"
+               stop-color="#3c6877" />
+            <stop
+               id="bg-s-polygon103-fill-2"
+               offset="55.3%"
+               stop-color="#386071" />
+            <stop
+               id="bg-s-polygon103-fill-3"
+               offset="69.67%"
+               stop-color="#325369" />
+            <stop
+               id="bg-s-polygon103-fill-4"
+               offset="81.92%"
+               stop-color="#29405c" />
+            <stop
+               id="bg-s-polygon103-fill-5"
+               offset="92.73%"
+               stop-color="#1e284c" />
+            <stop
+               id="bg-s-polygon103-fill-6"
+               offset="100%"
+               stop-color="#14133e" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-polygon104-fill"
+            cx="0"
+            cy="0"
+            r="102.8882"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(382.6869 235.369)">
+            <stop
+               id="bg-s-polygon104-fill-0"
+               offset="0%"
+               stop-color="#81fffb" />
+            <stop
+               id="bg-s-polygon104-fill-1"
+               offset="100%"
+               stop-color="#14ffb6" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-rect16-fill"
+            x1="-0.0002"
+            y1="1.2428"
+            x2="117.9093"
+            y2="1.2428"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-rect16-fill-0"
+               offset="0%"
+               stop-color="#e5e0c9" />
+            <stop
+               id="bg-s-rect16-fill-1"
+               offset="69.19%"
+               stop-color="#6f6f86" />
+            <stop
+               id="bg-s-rect16-fill-2"
+               offset="100%"
+               stop-color="#a99dc2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon111-fill"
+            x1="414.4348"
+            y1="266.6516"
+            x2="393.7187"
+            y2="217.8475"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon111-fill-0"
+               offset="0%"
+               stop-color="#000" />
+            <stop
+               id="bg-s-polygon111-fill-1"
+               offset="100%"
+               stop-color="#e8e4c2" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-polygon117-fill"
+            cx="0"
+            cy="0"
+            r="26.0636"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(1 0 0 1.4623 422.5422 334.549768)">
+            <stop
+               id="bg-s-polygon117-fill-0"
+               offset="0%"
+               stop-color="#81ff89" />
+            <stop
+               id="bg-s-polygon117-fill-1"
+               offset="100%"
+               stop-color="#14bd89" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-polygon120-fill"
+            x1="421.5511"
+            y1="335.8839"
+            x2="437.309"
+            y2="335.8839"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon120-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon120-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon120-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-polygon122-fill"
+            cx="0"
+            cy="0"
+            r="9.9688"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(422.3625 334.4865)">
+            <stop
+               id="bg-s-polygon122-fill-0"
+               offset="0%"
+               stop-color="#b3ff93" />
+            <stop
+               id="bg-s-polygon122-fill-1"
+               offset="100%"
+               stop-color="#54ffac" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path27-fill"
+            x1="240.830241"
+            y1="314.118907"
+            x2="272.463848"
+            y2="313.330994"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path27-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-path27-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-path27-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path60-fill"
+            x1="246.128923"
+            y1="312.586373"
+            x2="267.095531"
+            y2="312.064148"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path60-fill-0"
+               offset="0%"
+               stop-color="#bab7c2" />
+            <stop
+               id="bg-s-path60-fill-1"
+               offset="100%"
+               stop-color="#000" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path61-fill"
+            x1="252.728068"
+            y1="311.06884"
+            x2="258.411963"
+            y2="310.927269"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path61-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-path61-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-path61-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-polygon123-fill"
+            cx="0"
+            cy="0"
+            r="18.0797"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(1 0 0 0.8297 245.372 252.387218)">
+            <stop
+               id="bg-s-polygon123-fill-0"
+               offset="0%"
+               stop-color="#544873" />
+            <stop
+               id="bg-s-polygon123-fill-1"
+               offset="100%"
+               stop-color="#606886" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-polygon124-fill"
+            cx="0"
+            cy="0"
+            r="15.9737"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(1 0 0 0.8297 244.4569 291.590875)">
+            <stop
+               id="bg-s-polygon124-fill-0"
+               offset="0%"
+               stop-color="#544873" />
+            <stop
+               id="bg-s-polygon124-fill-1"
+               offset="100%"
+               stop-color="#606886" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-path62-fill"
+            cx="0"
+            cy="0"
+            r="9.3428"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.9866 -0.1632 0.1754 1.0601 249.017577 233.235993)">
+            <stop
+               id="bg-s-path62-fill-0"
+               offset="0%"
+               stop-color="#606886" />
+            <stop
+               id="bg-s-path62-fill-1"
+               offset="100%"
+               stop-color="#544873" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-path63-fill"
+            cx="0"
+            cy="0"
+            r="35.1285"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(1 0 0 0.8297 241.9943 248.121897)">
+            <stop
+               id="bg-s-path63-fill-0"
+               offset="0%"
+               stop-color="#e5e0c9" />
+            <stop
+               id="bg-s-path63-fill-1"
+               offset="79.37%"
+               stop-color="#6f6f86" />
+            <stop
+               id="bg-s-path63-fill-2"
+               offset="98.61%"
+               stop-color="#887786" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-path64-fill"
+            cx="0"
+            cy="0"
+            r="36.3768"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(0.9006 -0.2288 0.2043 0.8042 242.296648 263.406782)">
+            <stop
+               id="bg-s-path64-fill-0"
+               offset="0%"
+               stop-color="#544873" />
+            <stop
+               id="bg-s-path64-fill-1"
+               offset="100%"
+               stop-color="#606886" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path65-fill"
+            x1="236.01898"
+            y1="261.090582"
+            x2="286.685401"
+            y2="256.552987"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path65-fill-0"
+               offset="0%"
+               stop-color="#aeb3ae" />
+            <stop
+               id="bg-s-path65-fill-1"
+               offset="100%"
+               stop-color="#fbe6ae" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path66-fill"
+            x1="255.708576"
+            y1="257.632986"
+            x2="267.708882"
+            y2="256.55826"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path66-fill-0"
+               offset="0%"
+               stop-color="#ffffd3" />
+            <stop
+               id="bg-s-path66-fill-1"
+               offset="100%"
+               stop-color="#ffdcc2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path67-fill"
+            x1="233.8363"
+            y1="248.2041"
+            x2="253.788"
+            y2="247.7071"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path67-fill-0"
+               offset="0%"
+               stop-color="#bab7c2" />
+            <stop
+               id="bg-s-path67-fill-1"
+               offset="100%"
+               stop-color="#000" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon125-fill"
+            x1="244.5001"
+            y1="286.821"
+            x2="251.6704"
+            y2="286.821"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon125-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon125-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon125-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path72-fill"
+            x1="241.8393"
+            y1="276.5386"
+            x2="250.0518"
+            y2="276.5386"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path72-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-path72-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-path72-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon126-fill"
+            x1="244.7996"
+            y1="267.5817"
+            x2="248.4296"
+            y2="267.5817"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon126-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon126-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon126-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path104-fill"
+            x1="254.7586"
+            y1="312.6226"
+            x2="272.4361"
+            y2="312.6226"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path104-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-path104-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-path104-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path105-fill"
+            x1="233.964"
+            y1="243.6868"
+            x2="268.263"
+            y2="242.8323"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path105-fill-0"
+               offset="0%"
+               stop-color="#bab7c2" />
+            <stop
+               id="bg-s-path105-fill-1"
+               offset="100%"
+               stop-color="#000" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path106-fill"
+            x1="284.1045"
+            y1="300.0047"
+            x2="304.3426"
+            y2="299.7448"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path106-fill-0"
+               offset="0%"
+               stop-color="#2395a6" />
+            <stop
+               id="bg-s-path106-fill-1"
+               offset="100%"
+               stop-color="#015663" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-path107-fill"
+            cx="0"
+            cy="0"
+            r="7.15"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(1.0143 0.0128 -0.0127 0.9999 294.090677 289.532774)">
+            <stop
+               id="bg-s-path107-fill-0"
+               offset="0%"
+               stop-color="#81fffb" />
+            <stop
+               id="bg-s-path107-fill-1"
+               offset="100%"
+               stop-color="#14ffb6" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path108-fill"
+            x1="285.669516"
+            y1="289.533209"
+            x2="302.511734"
+            y2="289.532537"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path108-fill-0"
+               offset="0%"
+               stop-color="#015663" />
+            <stop
+               id="bg-s-path108-fill-1"
+               offset="100%"
+               stop-color="#2395a6" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-path109-fill"
+            cx="0"
+            cy="0"
+            r="7.1943"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(306.4997 298.4807)">
+            <stop
+               id="bg-s-path109-fill-0"
+               offset="0%"
+               stop-color="#3b6a89" />
+            <stop
+               id="bg-s-path109-fill-1"
+               offset="100%"
+               stop-color="#14133e" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path110-fill"
+            x1="299.1309"
+            y1="298.9798"
+            x2="312.7373"
+            y2="298.8051"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path110-fill-0"
+               offset="0%"
+               stop-color="#015663" />
+            <stop
+               id="bg-s-path110-fill-1"
+               offset="100%"
+               stop-color="#2395a6" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-path111-fill"
+            cx="0"
+            cy="0"
+            r="4.29"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(307.1084 292.2031)">
+            <stop
+               id="bg-s-path111-fill-0"
+               offset="0%"
+               stop-color="#81fffb" />
+            <stop
+               id="bg-s-path111-fill-1"
+               offset="100%"
+               stop-color="#14ffb6" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path112-fill"
+            x1="288.1924"
+            y1="309.134"
+            x2="288.1924"
+            y2="291.1171"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path112-fill-0"
+               offset="0%"
+               stop-color="#000" />
+            <stop
+               id="bg-s-path112-fill-1"
+               offset="100%"
+               stop-color="#bab7c2" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon127-fill"
+            x1="301.2563"
+            y1="294.5645"
+            x2="303.8616"
+            y2="294.5645"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon127-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon127-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon127-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-polygon128-fill"
+            x1="299.2086"
+            y1="306.6571"
+            x2="301.5176"
+            y2="306.6571"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-polygon128-fill-0"
+               offset="0%"
+               stop-color="#062a4f" />
+            <stop
+               id="bg-s-polygon128-fill-1"
+               offset="57.42%"
+               stop-color="#031841" />
+            <stop
+               id="bg-s-polygon128-fill-2"
+               offset="100%"
+               stop-color="#000734" />
+         </linearGradient>
+         <linearGradient
+            id="bg-s-path113-fill"
+            x1="292.9479"
+            y1="304.5712"
+            x2="292.9479"
+            y2="296.5305"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path113-fill-0"
+               offset="0%"
+               stop-color="#ffcfa9" />
+            <stop
+               id="bg-s-path113-fill-1"
+               offset="100%"
+               stop-color="#ffb" />
+         </linearGradient>
+         <radialGradient
+            id="bg-s-polygon129-fill"
+            cx="0"
+            cy="0"
+            r="57.3212"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(185.5921 298.5827)">
+            <stop
+               id="bg-s-polygon129-fill-0"
+               offset="0%"
+               stop-color="#3b6a89" />
+            <stop
+               id="bg-s-polygon129-fill-1"
+               offset="100%"
+               stop-color="#14133e" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-polygon131-fill"
+            cx="0"
+            cy="0"
+            r="21.4581"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(211.02 298.9031)">
+            <stop
+               id="bg-s-polygon131-fill-0"
+               offset="0%"
+               stop-color="#81fffb" />
+            <stop
+               id="bg-s-polygon131-fill-1"
+               offset="100%"
+               stop-color="#14ffb6" />
+         </radialGradient>
+         <radialGradient
+            id="bg-s-path116-fill"
+            cx="0"
+            cy="0"
+            r="37.3289"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(182.9947 299.5635)">
+            <stop
+               id="bg-s-path116-fill-0"
+               offset="0%"
+               stop-color="#0e7795" />
+            <stop
+               id="bg-s-path116-fill-1"
+               offset="100%"
+               stop-color="#143150" />
+         </radialGradient>
+         <linearGradient
+            id="bg-s-path118-fill"
+            x1="184.7154"
+            y1="310.8266"
+            x2="238.0819"
+            y2="309.497"
+            spreadMethod="pad"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(0 0)">
+            <stop
+               id="bg-s-path118-fill-0"
+               offset="0%"
+               stop-color="#bab7c2" />
+            <stop
+               id="bg-s-path118-fill-1"
+               offset="100%"
+               stop-color="#000" />
+         </linearGradient>
+      </defs>
+      <g
+         id="bg-u-detective"
+         transform="translate(1052.000122 0.000001)">
+         <g
+            id="bg-u-room"
+            transform="matrix(5 0 0 5-1531.77497-586.80008)"
+            clip-path="url(#bg-u-svgid_00000129899115616282899170000000701475121678455989_)">
+            <g
+               id="bg-s-g1">
+            <polygon
+               id="bg-s-polygon1"
+               points="700,362.629 471.634,284.424 210,284.424 0,362.629"
+               fill="url(#bg-s-polygon1-fill)" />
+            <g
+               id="bg-s-g2"
+               opacity="0.2">
+               <g
+                  id="bg-s-g3">
+                  <polygon
+                     id="bg-s-polygon2"
+                     points="233.06,284.56 198.76,299.71 198.07,300.02 111.32,338.33 110.6,338.65 60.677095,360.698468 109.82,338.67 110.54,338.35 197.32,300.02 198.01,299.72 232.94,284.29"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g4">
+                  <polygon
+                     id="bg-s-polygon3"
+                     points="251.57,284.55 225.19,299.45 224.65,299.76 158.47,337.15 157.91,337.46 114.567708,361.610089 157.28,337.48 157.84,337.16 224.04,299.76 224.58,299.46 251.43,284.29"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g5">
+                  <polygon
+                     id="bg-s-polygon4"
+                     points="336.52,332.98 336.52,332.68 335.69,298.68 335.69,298.38 335.35,284.43 335.65,284.42 335.99,298.38 335.99,298.68 336.82,332.67 336.82,332.97 337.266995,362.918923"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g6">
+                  <polygon
+                     id="bg-s-polygon5"
+                     points="274.09,284.54 255.4,299.16 255.39,299.16 255.01,299.46 208.43,335.89 208.42,335.89 208.03,336.2 208.02,336.2 174.555037,362.0065 207.53,336.22 207.93,335.91 254.52,299.47 254.53,299.47 254.92,299.16 273.91,284.31"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g7">
+                  <polygon
+                     id="bg-s-polygon6"
+                     points="293.61,284.52 280.66,298.91 280.38,299.22 248.28,334.89 248,335.2 224.790919,360.550641 247.59,335.21 247.6,335.21 247.87,334.91 279.98,299.22 280.25,298.92 293.39,284.32"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g8">
+                  <polygon
+                     id="bg-s-polygon7"
+                     points="312.14,284.48 306.01,298.67 305.88,298.97 290.83,333.83 290.7,334.13 278.328285,362.003668 290.36,334.14 290.49,333.84 290.5,333.84 305.55,298.97 305.68,298.67 311.86,284.36"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g9">
+                  <polygon
+                     id="bg-s-polygon8"
+                     points="711.96,387.19 711.91,387.33 711.91,387.34 711.85,387.47 711.12,387.19 556.43,327.47 556.42,327.47 555.69,327.18 555.68,327.18 478.28,297.3 478.27,297.3 477.53,297.01 477.52,297.01 445.28,284.56 445.39,284.28 478.33,297 478.34,297 479.09,297.29 556.46,327.16 556.47,327.16 557.2,327.45 557.21,327.45"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g10">
+                  <polygon
+                     id="bg-s-polygon9"
+                     points="506.29,328.72 505.79,328.44 505.78,328.44 450.67,297.57 450.14,297.27 427.43,284.55 427.57,284.29 450.73,297.26 450.74,297.26 451.26,297.56 506.36,328.42 506.87,328.71 506.88,328.71 565.652431,361.626739"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g11">
+                  <polygon
+                     id="bg-s-polygon10"
+                     points="460.76,329.87 460.39,329.57 420.84,297.85 420.47,297.56 404.24,284.54 404.43,284.31 420.94,297.55 421.31,297.85 460.85,329.56 460.86,329.56 461.21,329.85 461.22,329.85 500.40746,361.284869"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g12">
+                  <polygon
+                     id="bg-s-polygon11"
+                     points="423.09,330.81 422.84,330.52 394.22,298.11 393.96,297.82 382.22,284.52 382.45,284.32 394.36,297.81 394.63,298.11 423.23,330.51 423.24,330.51 423.49,330.8 450.645619,361.550983"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g13">
+                  <polygon
+                     id="bg-s-polygon12"
+                     points="381.37,331.86 381.24,331.56 366.91,298.38 366.78,298.08 360.91,284.48 361.18,284.36 367.1,298.08 367.23,298.37 381.56,331.55 381.69,331.85 394.855238,362.341754"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g14">
+                  <polygon
+                     id="bg-s-polygon13"
+                     points="198.01,299.72 198.76,299.71 198.07,300.02 197.32,300.02 167.75,300.31 167.75,300.01"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon14"
+                     points="255.39,299.16 255.01,299.46 254.53,299.47 254.52,299.47 224.65,299.76 224.04,299.76 224.58,299.46 225.19,299.45 254.92,299.16"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon15"
+                     points="306.01,298.67 305.88,298.97 305.55,298.97 280.38,299.22 279.98,299.22 280.25,298.92 280.66,298.91 305.68,298.67"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon16"
+                     points="367.23,298.37 366.91,298.38 335.99,298.68 335.69,298.68 335.69,298.38 335.99,298.38 366.78,298.08 367.1,298.08"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon17"
+                     points="421.31,297.85 420.84,297.85 394.63,298.11 394.22,298.11 393.96,297.82 394.36,297.81 420.47,297.56 420.94,297.55"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon18"
+                     points="479.09,297.29 478.28,297.3 478.27,297.3 451.26,297.56 450.67,297.57 450.14,297.27 450.73,297.26 450.74,297.26 477.52,297.01 477.53,297.01 478.33,297 478.34,297"
+                     fill="#792078" />
+               </g>
+               <g
+                  id="bg-s-g15">
+                  <polygon
+                     id="bg-s-polygon19"
+                     points="158.47,337.15 157.91,337.46 157.28,337.48 110.6,338.65 109.82,338.67 110.54,338.35 111.32,338.33 157.84,337.16"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon20"
+                     points="248.28,334.89 248,335.2 247.6,335.21 247.59,335.21 208.03,336.2 208.02,336.2 207.53,336.22 207.93,335.91 208.42,335.89 208.43,335.89 247.87,334.91"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon21"
+                     points="336.82,332.67 336.82,332.97 336.52,332.98 290.7,334.13 290.36,334.14 290.49,333.84 290.5,333.84 290.83,333.83 336.52,332.68"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon22"
+                     points="423.49,330.8 423.09,330.81 381.69,331.85 381.37,331.86 381.24,331.56 381.56,331.55 422.84,330.52 423.23,330.51 423.24,330.51"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon23"
+                     points="506.87,328.71 506.29,328.72 461.22,329.85 461.21,329.85 460.76,329.87 460.39,329.57 460.85,329.56 460.86,329.56 505.78,328.44 505.79,328.44 506.36,328.42"
+                     fill="#792078" />
+                  <polygon
+                     id="bg-s-polygon24"
+                     points="594.13,326.52 557.21,327.45 557.2,327.45 556.43,327.47 556.42,327.47 555.69,327.18 556.46,327.16 556.47,327.16 594.12,326.22"
+                     fill="#792078" />
+               </g>
+            </g>
+            <polygon
+               id="bg-s-polygon25"
+               points="247.87,334.91 293.39,284.32 274.09,284.54 208.43,335.89"
+               opacity="0.2"
+               fill="#ffffd7" />
+            <polygon
+               id="bg-s-polygon26"
+               points="577.719996,362.918924 647.286415,362.547516 478.27,297.3 451.26,297.56"
+               opacity="0.2"
+               fill="#ffffd7" />
+            <polygon
+               id="bg-s-polygon27"
+               points="157.84,337.16 111.32,338.33 233.06,284.56 250.91,284.424"
+               opacity="0.15"
+               fill="#792078" />
+            <polygon
+               id="bg-s-polygon28"
+               points="330.334,284.402 324.968983,362.918927 362.850062,363.155084 345.333,284.32"
+               opacity="0.1"
+               fill="#792078" />
+            <polygon
+               id="bg-s-polygon29"
+               points="204.270057,363.114801 289.882,284.36 298.667,284.424 245.267274,362.284064"
+               opacity="0.1"
+               fill="#792078" />
+            <polygon
+               id="bg-s-polygon30"
+               points="423.49,284.28 438.5,284.28 597.294569,362.778253 555.68,362.918924"
+               opacity="0.1"
+               fill="#792078" />
+            </g>
+            <polygon
+               id="bg-s-polygon31"
+               points="222,284.424 204.983,69.895 462.971,67.196 455.44,284.424"
+               fill="url(#bg-s-polygon31-fill)" />
+            <polygon
+               id="bg-s-polygon32"
+               points="205.399,71.977 0,0 0,0 0,362.629 222,284.424"
+               fill="#ee7c4d" />
+            <polygon
+               id="bg-s-polygon33"
+               points="462.874,70.052 692,0 700,0 700,362.629 455.44,280.491"
+               fill="url(#bg-s-polygon33-fill)" />
+            <polygon
+               id="bg-s-polygon34"
+               points="700,349.333 455.44,280.491 221.5,280.491 0,349.333 0,362.629 222,284.424 455.44,284.424 700,362.629"
+               fill="url(#bg-s-polygon34-fill)" />
+            <polygon
+               id="bg-s-polygon35"
+               points="700,349.333 455.44,280.491 221.5,280.491 0,349.333 0,356.667 221.814,282.108 455.532,281.773 700,355"
+               fill="#fff" />
+            <g
+               id="bg-u-window">
+            <polygon
+               id="bg-s-polygon36"
+               points="38.5,59.201 144.388,88.5 150,234.5 36.44,256.143"
+               fill="url(#bg-s-polygon36-fill)" />
+            <polygon
+               id="bg-s-polygon37"
+               points="47,68.634 140.148,91.733 144.388,225.949 48.125,244"
+               fill="url(#bg-s-polygon37-fill)" />
+            <polygon
+               id="bg-s-polygon38"
+               points="144.388,225.949 107.5,225 47,234.5 48.125,244"
+               opacity="0.5"
+               fill="url(#bg-s-polygon38-fill)" />
+            <polygon
+               id="bg-s-polygon39"
+               points="107.5,225 107.5,96.5 47,81.5 48.063,234.333"
+               fill="#fff" />
+            <polygon
+               id="bg-s-polygon40"
+               points="38.5,59.201 34.75,59.892 34.868,254.75 36.44,256.143"
+               fill="#a4564d" />
+            <polygon
+               id="bg-s-polygon41"
+               points="48.063,234.333 107.5,225 107.5,96.5 47,81.5 47.25,88.25 103.5,100.5 103.75,221.25 47,228.25"
+               fill="url(#bg-s-polygon41-fill)" />
+            <polygon
+               id="bg-s-polygon42"
+               points="47.391,137.773 103.584,142.313 103.584,145.333 47.425,142.658"
+               fill="url(#bg-s-polygon42-fill)" />
+            <polygon
+               id="bg-s-polygon43"
+               points="107.5,96.5 140.148,91.733 47,68.634 47,81.5"
+               opacity="0.5"
+               fill="url(#bg-s-polygon43-fill)" />
+            <polygon
+               id="bg-s-polygon44"
+               points="136.256,93.75 136.256,96.5 47,74.905 47,70.906"
+               fill="url(#bg-s-polygon44-fill)" />
+            <polygon
+               id="bg-s-polygon45"
+               points="136.256,96.5 132.25,97.375 47,77.5 47,74.905"
+               fill="#d18b60" />
+            <polygon
+               id="bg-s-polygon46"
+               points="132.563,97.375 132.563,192.667 47.704,199.667 47.313,77.5"
+               opacity="0.8"
+               fill="url(#bg-s-polygon46-fill)" />
+            <polygon
+               id="bg-s-polygon47"
+               points="133.938,191.25 47.625,197.5 47.877,201.375 133.938,193.66"
+               fill="url(#bg-s-polygon47-fill)" />
+            <polygon
+               id="bg-s-polygon48"
+               points="47.625,197.5 131.75,191.833 133.938,192.375 133.938,191.25 47.625,196.313"
+               fill="#fff" />
+            <polygon
+               id="bg-s-polygon49"
+               points="60,97.375 117.75,108.25 116.5,137.773 61.41,132.5"
+               fill="#ffffd7" />
+            <polygon
+               id="bg-s-polygon50"
+               points="67.843,147.898 67.843,189.434 115.413,186.25 115.413,149.5"
+               fill="#ffffd7" />
+            <polygon
+               id="bg-s-polygon51"
+               points="134.635,96.854 137.167,203.833 136.438,206.688 138.438,206.688 137.813,203.688 135.333,96.5"
+               fill="#fff" />
+            <polygon
+               id="bg-s-polygon52"
+               points="133.938,193.66 183.255,278.995 47,311.377 47.877,201.375"
+               opacity="0.32"
+               fill="url(#bg-s-polygon52-fill)" />
+            </g>
+            <polygon
+               id="bg-s-polygon54"
+               points="144.61,100.5 200.333,150.331 216.733,281.973 221.5,280.491 221.75,278.5 211.476,151.594 461.635,105.737 631.102283,105.737 631.102284,327.45 650.333,337.23441 650.333,91.733 67.842999,91.733 85.473705,202.663424 85.473704,111.095717"
+               opacity="0.2"
+               fill="#7e2275" />
+            <clipPath
+               id="bg-u-svgid_00000129899115616282899170000000701475121678455989_">
+            <use
+               id="bg-s-use1"
+               width="700"
+               height="450"
+               xlink:href="#bg-u-svgid_1_"
+               transform="translate(.125 0)" />
+            </clipPath>
+         </g>
+         <g
+            id="bg-u-elements"
+            transform="matrix(.9 0 0 0.9-39.985208 85.278197)">
+            <g
+               id="bg-u-boardgroup"
+               transform="matrix(3.6 0 0 3.6-1516.834966-334.053238)">
+            <g
+               id="bg-u-board"
+               transform="matrix(2 0 0 1-515.732498 0)">
+               <polygon
+                  id="bg-s-polygon55"
+                  points="562.755,256.593 565.005,110.135 472.53,130.255 473.625,249.34"
+                  opacity="0.2" />
+               <polygon
+                  id="bg-s-polygon56"
+                  points="556.685,252.551 558.935,106.092 467.109612,106.092 467.109611,251.981"
+                  fill="url(#bg-s-polygon56-fill)" />
+               <polygon
+                  id="bg-s-polygon57"
+                  points="558.935,106.092 560.935,107.176 557.996,251.981 556.685,252.551"
+                  fill="#47001c" />
+               <polygon
+                  id="bg-s-polygon58"
+                  points="470.83575,244.589087 551.78475,244.589088 551.784749,111.883002 470.994997,111.883"
+                  transform="translate(1 0)"
+                  fill="url(#bg-s-polygon58-fill)" />
+               <polygon
+                  id="bg-s-polygon59"
+                  points="470.807496,245.268 471.905001,245.394884 472.051999,113.488 551.78475,113.488 551.78475,111.883 470.807496,111.883002"
+                  transform="translate(1 0)"
+                  fill="#47001c" />
+               <polygon
+                  id="bg-s-polygon60"
+                  points="470.745043,245.268 470.745043,243.656408 551.435,243.656408 551.435,245.268"
+                  transform="matrix(1 0 0 1.000001 1.142477 0.126639)"
+                  fill="url(#bg-s-polygon60-fill)" />
+            </g>
+            <a href="/Project/Project.html">
+               <g
+                  id="bg-u-project"
+                  transform="matrix(1.6 0 0 1.6-323.24952-24.671479)">
+                  <polygon
+                     id="bg-s-polygon61"
+                     points="481.194,135.303 498.362,134.186 496.603,157.022 482.497,156.61"
+                     fill="url(#bg-s-polygon61-fill)" />
+                  <text
+                     xml:space="preserve"
+                     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.11523px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:#4d4d4d;stroke-width:0.0578704;stroke-linecap:round;stroke-linejoin:bevel;paint-order:stroke fill markers"
+                     x="483.16901"
+                     y="152.31342"
+                     id="text1"><tspan
+                        sodipodi:role="line"
+                        id="tspan1"
+                        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.11523px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.0578704"
+                        x="483.16901"
+                        y="152.31342">Project</tspan></text>
+                  <polygon
+                     id="bg-s-polygon62"
+                     points="498.362,134.186 497.424,158.126 483.086,157.022 482.497,156.61 496.603,157.022"
+                     transform="translate(0 0.192901)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon63"
+                     points="495.929,150.167 483.297,150.167 482.497,136.355 497.193,135.008"
+                     transform="matrix(.708851 0 0 0.49626 143.098042 68.922262)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon64"
+                     points="497.243699,150.167 482.497,150.167 482.497,136.355 497.193,135.008"
+                     transform="matrix(.9 0 0 0.06 48.894685 137.04875)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon65"
+                     points="497.243699,150.167 482.497,150.167 482.497,136.355 497.193,135.008"
+                     transform="matrix(.9 0 0 0.06 48.894685 138.399057)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+               </g>
+            </a>
+            <a href="/Portfolio/Portfolio.html">
+               <g
+                  id="bg-u-portfolio"
+                  transform="matrix(1.791726,0,0,1.6,-323.11944,-22.819627)">
+                  <polygon
+                     id="bg-s-polygon66"
+                     points="498.362,134.186 496.603,157.022 482.497,156.61 481.194,135.303 "
+                     fill="url(#bg-s-polygon66-fill)"
+                     style="fill:url(#bg-s-polygon66-fill)" />
+                  <text
+                     xml:space="preserve"
+                     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88882px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#4d4d4d;stroke-width:0.0546866;stroke-linecap:round;stroke-linejoin:bevel;paint-order:stroke fill markers"
+                     x="510.80817"
+                     y="142.85695"
+                     id="text1-8"
+                     transform="scale(0.94498344,1.0582196)"
+                     inkscape:transform-center-x="9.9416018"
+                     inkscape:transform-center-y="-4.8804227"><tspan
+                        sodipodi:role="line"
+                        id="tspan1-2"
+                        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88882px;font-family:Serif;-inkscape-font-specification:'Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0.0546866"
+                        x="510.80817"
+                        y="142.85695">Portfolio</tspan></text>
+                  <polygon
+                     id="bg-s-polygon67"
+                     points="497.424,158.126 483.086,157.022 482.497,156.61 496.603,157.022 498.362,134.186 "
+                     transform="translate(0,0.192901)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon68"
+                     points="483.297,150.167 482.497,136.355 497.193,135.008 495.929,150.167 "
+                     transform="matrix(0.237623,0,0,0.235507,370.0687,104.17337)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon69"
+                     points="483.297,150.167 482.497,136.355 497.193,135.008 495.929,150.167 "
+                     transform="matrix(0.237623,0,0,0.235507,370.0687,109.9604)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon70"
+                     points="483.297,150.167 482.497,136.355 497.193,135.008 495.929,150.167 "
+                     transform="matrix(0.237623,0,0,0.235507,375.85573,109.9604)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+                  <polygon
+                     id="bg-s-polygon71"
+                     points="483.297,150.167 482.497,136.355 497.193,135.008 495.929,150.167 "
+                     transform="matrix(0.237623,0,0,0.235507,375.85573,104.17337)"
+                     opacity="0.2"
+                     fill="#7e2275" />
+               </g>
+            </a>
+            <g
+               id="bg-u-help"
+               transform="matrix(2 0 0 2-565.60048-312.717003)">
+               <polygon
+                  id="bg-s-polygon72"
+                  points="528.307,217.956 545.475,216.839 543.716,239.675 529.61,239.263"
+                  transform="matrix(1.2 0 0 1.2-107.378198-45.651401)"
+                  fill="url(#bg-s-polygon72-fill)" />
+               <polygon
+                  id="bg-s-polygon73"
+                  points="543.042,232.82 530.409,232.82 529.253113,218.597535 544.305,217.661"
+                  transform="matrix(1.2 0 0 1.2-107.391498-45.0481)" />
+               <polygon
+                  id="bg-s-polygon74"
+                  points="543.042,232.82 530.409,232.82 529.253113,218.597535 544.305,217.661"
+                  transform="matrix(1.2 0 0 1.2-107.391498-45.0481)"
+                  opacity="0.15"
+                  fill="#fff" />
+               <g
+                  id="bg-u-question"
+                  transform="matrix(.8 0 0 0.8 133.305596 88.604142)">
+                  <g
+                     id="bg-s-g16"
+                     opacity="0.5">
+                  <path
+                     id="bg-s-path1"
+                     d="M500.694,163.163c-.529.029-.965.369-1.284.755-.327.388-.599.824-.807,1.29-.432.925-.711,1.917-.897,2.92-.383,2.002-.428,4.081-.035,6.057.4,1.951,1.271,3.885,2.891,4.976.794.544,1.727.875,2.699.989.973.102,1.977.046,2.946-.135.96-.2,1.884-.547,2.658-1.115.777-.562,1.387-1.339,1.792-2.224.827-1.786.859-3.88.615-5.874-.258-2.01-.876-3.989-1.788-5.814-.45-.915-.982-1.798-1.647-2.572-.661-.755-1.479-1.488-2.533-1.585c1.066-.005,1.99.686,2.708,1.423.735.751,1.338,1.619,1.861,2.527c1.017,1.833,1.729,3.837,2.084,5.919.361,2.068.327,4.296-.553,6.315-.441,1-1.134,1.914-2.025,2.576-.889.669-1.936,1.078-2.997,1.307-1.069.185-2.148.233-3.233.104-1.081-.141-2.151-.531-3.056-1.169-1.838-1.294-2.788-3.448-3.102-5.524-.329-2.101-.198-4.235.284-6.275.259-1.016.609-2.013,1.115-2.934.245-.463.554-.897.92-1.274.364-.371.854-.683,1.384-.663Z"
+                     fill="#fff" />
+                  </g>
+                  <g
+                     id="bg-s-g17"
+                     opacity="0.5">
+                  <path
+                     id="bg-s-path2"
+                     d="M501.675,168.413c.766-.969,1.784-1.942,3.256-2.036.742-.05,1.475.383,1.928.917.23.29.426.617.518,1.015.043.192.032.398.04.597-.035.188-.071.383-.126.563-.586,1.378-1.671,2.106-2.525,2.97-.423.421-.864.862-.967,1.36-.092.603-.123,1.244-.229,1.864-.098-.629-.155-1.241-.212-1.885.034-.771.499-1.323.891-1.816.407-.5.857-.936,1.251-1.397.402-.448.773-.92.942-1.399.195-.473.076-.907-.24-1.331-.328-.432-.765-.717-1.293-.758-1.077-.059-2.245.6-3.234,1.336Z"
+                     fill="#fff" />
+                  </g>
+                  <g
+                     id="bg-s-g18"
+                     opacity="0.5">
+                  <path
+                     id="bg-s-path3"
+                     d="M503.367,176.904c.355.321.435.642.45.963-.013.321-.093.642-.45.963-.357-.321-.437-.642-.45-.963.015-.321.095-.642.45-.963Z"
+                     fill="#fff" />
+                  </g>
+               </g>
+            </g>
+            <g
+               id="bg-u-arrow3"
+               transform="matrix(.961262 0.275637-.275637 0.961262 91.714602-104.364234)"
+               opacity="0.5">
+               <polygon
+                  id="bg-s-polygon75"
+                  points="488.397,139.905 525.76,155.103 525.372,156.025"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path4"
+                  d="M515.268,155.564c3.433-.46,6.865-.523,10.298-.483l-.417.725c-1.147-2.053-2.223-4.148-3.131-6.34c1.458,1.872,2.747,3.843,3.965,5.855l.433.716-.851.01c-3.432.04-6.864-.023-10.297-.483Z"
+                  fill="#fff" />
+            </g>
+            <g
+               id="bg-u-arrow1"
+               transform="matrix(1.2 0 0 1.2-149.127103-50.807498)"
+               opacity="0.5">
+               <polygon
+                  id="bg-s-polygon76"
+                  points="530.101,178.575 512.2,199.267 511.456,198.599"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path5"
+                  d="M513.268,193.18c-.127,2.006-.512,3.948-.962,5.873l-.536-.608c1.154-.157,2.315-.265,3.48-.338c1.166-.066,2.335-.097,3.519-.014-1.13.363-2.273.612-3.42.827-1.148.207-2.301.379-3.46.503l-.719.077.182-.685c.508-1.912,1.083-3.806,1.916-5.635Z"
+                  fill="#fff" />
+            </g>
+            </g>
+            <g
+               id="bg-u-wreckitralph"
+               transform="translate(-547.55882-15.999999)">
+            <polygon
+               id="bg-s-polygon77"
+               points="741.151269,256.593 741.151269,83.527493 724.869242,-315.420414 692.986007,-321.831999 692.986005,232.15285 484.46352,232.15285 473.625,249.34"
+               transform="translate(-331.931765 657.606919)"
+               opacity="0.2" />
+            <rect
+               id="bg-s-rect1"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(1.003691 0 0 1 121.920277 741.90143)"
+               fill="#5d99bc"
+               stroke="#fff"
+               stroke-width="4" />
+            <path
+               id="bg-u-4-point-star"
+               d="M81.5,55C63.18,62.28,57.28,68.18,50,86.5C42.72,68.18,36.82,62.28,18.5,55C36.82,47.72,42.72,41.82,50,23.5C57.28,41.82,63.18,47.72,81.5,55Z"
+               transform="translate(117.542256 755.135331)"
+               fill="#fff" />
+            <path
+               id="bg-u-4-point-star2"
+               d="M81.5,55C63.18,62.28,57.28,68.18,50,86.5C42.72,68.18,36.82,62.28,18.5,55C36.82,47.72,42.72,41.82,50,23.5C57.28,41.82,63.18,47.72,81.5,55Z"
+               transform="matrix(.5 0.866025-.866025 0.5 345.729207 772.667394)"
+               fill="#fff" />
+            <rect
+               id="bg-s-rect2"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(.269682 0 0 0.807844 214.123516 756.949897)"
+               stroke-width="0" />
+            <rect
+               id="bg-s-rect3"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(1.003691 0 0 0.03 121.920278 743.181096)"
+               opacity="0.65"
+               stroke="#000"
+               stroke-width="0" />
+            <rect
+               id="bg-s-rect4"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(1.031685 0 0 0.250325 118.403785 701.926608)"
+               fill="#5d99bc"
+               stroke="#fff"
+               stroke-width="3" />
+            <path
+               id="bg-u-rectangle"
+               d="M0.969288,-84.513874l249.491756.639931.770861,240.501543L0,156.6276l.969288-241.141474Z"
+               transform="matrix(1.031685 0 0 0.31 118.403784 652.977863)"
+               fill="#5d99bc"
+               stroke="#fff"
+               stroke-width="3" />
+            <path
+               id="bg-u-5-point-star-rounded"
+               d="M55.73,26.77l4.63,9.38c.929428,1.887329,2.728272,3.19626,4.81,3.5l10.35,1.5c2.385572.363936,4.362643,2.040738,5.11115,4.334892s.140763,4.814297-1.57115,6.515108l-7.49,7.3c-1.520972,1.47709-2.210266,3.612405-1.84,5.7L71.5,75.31c.389704,2.389243-.604203,4.793563-2.567211,6.210232s-4.558023,1.602414-6.702789.479768L53,77.18c-1.862346-.979711-4.087654-.979711-5.95,0L37.77,82c-2.153461,1.131654-4.762685.942382-6.730281-.488211s-2.952206-3.854314-2.539719-6.251789L30.27,65c.356342-2.074567-.331865-4.191553-1.84-5.66L20.94,52c-1.742057-1.697538-2.369291-4.236892-1.61796-6.55031s2.750913-3.999659,5.15796-4.34969l10.35-1.5c2.081728-.30374,3.880572-1.612671,4.81-3.5l4.63-9.38c1.085997-2.176319,3.313332-3.547403,5.74554-3.536791s4.647495,1.401079,5.71446,3.586791Z"
+               transform="matrix(.655322 0.458861-.458861 0.655322 220.656921 611.173627)"
+               fill="#fff" />
+            <path
+               id="bg-u-4-point-star3"
+               d="M81.5,55C63.18,62.28,57.28,68.18,50,86.5C42.72,68.18,36.82,62.28,18.5,55C36.82,47.72,42.72,41.82,50,23.5C57.28,41.82,63.18,47.72,81.5,55Z"
+               transform="matrix(.45 0.779423-.779423 0.45 330.132736 594.191969)"
+               fill="#fff" />
+            <rect
+               id="bg-s-rect5"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(.14 0 0 0.36 129.656669 635.962523)"
+               fill-opacity="0.8"
+               stroke-width="0" />
+            <path
+               id="bg-s-path6"
+               d="M1205.267,1207.177c-24.153,0-43.805,11.683-43.805,26.046s19.652,26.046,43.805,26.046s43.803-11.683,43.803-26.046c0-14.362-19.649-26.046-43.803-26.046Z"
+               transform="matrix(.3 0 0 0.3-115.148705 273.501782)"
+               fill="#ffff7c" />
+            <path
+               id="bg-s-path7"
+               d="M1205.267,1207.177c-24.153,0-43.805,11.683-43.805,26.046s19.652,26.046,43.805,26.046s43.803-11.683,43.803-26.046c0-14.362-19.649-26.046-43.803-26.046Z"
+               transform="matrix(.3 0 0 0.3-81.815372 273.501782)"
+               fill="#1553cc" />
+            <path
+               id="bg-s-path8"
+               d="M1205.267,1207.177c-24.153,0-43.805,11.683-43.805,26.046s19.652,26.046,43.805,26.046s43.803-11.683,43.803-26.046c0-14.362-19.649-26.046-43.803-26.046Z"
+               transform="matrix(.3 0 0 0.3-48.482039 273.501782)"
+               fill="#1553cc" />
+            <path
+               id="bg-s-path9"
+               d="M1205.267,1207.177c-24.153,0-43.805,11.683-43.805,26.046s19.652,26.046,43.805,26.046s43.803-11.683,43.803-26.046c0-14.362-19.649-26.046-43.803-26.046Z"
+               transform="matrix(.3 0 0 0.3-15.148706 273.501782)"
+               fill="#ffff7c" />
+            <g
+               id="bg-u-joystick"
+               transform="matrix(.2 0 0 0.2 160.32793 538.563941)">
+               <path
+                  id="bg-s-path10"
+                  d="M731.241,1245.677c-.146-.119-.331-.168-.514-.134-6.514,1.223-12.643,1.101-18.826-.217-.178-.046-.375.005-.521.124s-.232.297-.232.485v12.415c-46.352,2.954-81.237,25.92-81.237,53.583c0,29.725,40.882,53.907,91.13,53.907c50.249,0,91.13-24.183,91.13-53.907c0-27.49-34.659-50.431-80.707-53.53v-12.246c.001-.185-.082-.361-.223-.48Z"
+                  transform="translate(-520.631129-629.782169)" />
+               <path
+                  id="bg-s-path11"
+                  d="M711.938,1161.404c-7.274-.217-14.98,3.883-19.998,10.826-3.934,5.44-6.434,12.356-7.869,21.769-1.708,11.167-.205,19.169,4.59,24.465c2.346,2.59,5.888,4.217,9.245,4.251h.1c2.424,0,4.5-.843,6.005-2.444.468-.497.882-.923,1.25-1.298c2.044-2.093,2.809-2.877,3.211-6.553.19-1.735.183-3.496.173-5.199-.01-1.961-.017-3.985.275-5.956c1.045-7.026,3.552-13.857,7.254-19.752.336-.536.685-1.067,1.033-1.6c1.277-1.954,2.599-3.976,3.391-6.244c1.199-3.425.826-6.811-.996-9.06-1.574-1.943-4.295-3.083-7.664-3.205Z"
+                  transform="translate(-521.49313-628.25412)"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path12"
+                  d="M730.842,1246.157c22.418-4.198,39.393-23.838,39.393-47.474c0-26.692-21.639-48.331-48.333-48.331-26.692,0-48.331,21.64-48.331,48.331c0,23.217,16.376,42.594,38.202,47.252c3.268.698,6.652,1.082,10.129,1.082c3.058,0,6.039-.317,8.94-.86Zm-10.833-72.695c-.977,2.799-2.787,5.211-4.363,7.72-3.803,6.056-6.292,12.921-7.342,19.99-.558,3.742-.049,7.489-.451,11.179-.448,4.1-1.264,4.266-4.297,7.494-3.737,3.971-10.772,2.239-14.431-1.801-5.639-6.229-5.705-15.647-4.436-23.951c1.159-7.603,3.249-15.265,7.756-21.498c4.504-6.232,11.786-10.846,19.471-10.568c2.677.097,5.515.891,7.201,2.974c1.866,2.303,1.871,5.665.892,8.461Z"
+                  transform="translate(-521.49313-628.25412)" />
+            </g>
+            <rect
+               id="bg-s-rect6"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(1.031685 0 0 0.172922 118.403785 598.988331)"
+               stroke="#fff"
+               stroke-width="4" />
+            <path
+               id="bg-s-path13"
+               d="M118.40378,600.76514v-212.46926h259.19219v212.46926h-259.19219Zm223.80806-39.6679v-133.13346h-188.42393v133.13346h188.42393Z"
+               fill="#c3bf0d"
+               stroke="#fff"
+               stroke-width="4" />
+            <rect
+               id="bg-s-rect7"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(.76 0 0 0.86 152.531754 427.180642)"
+               stroke-width="0" />
+            <image
+               id="bg-u-5a75932564538c292dec1bbc"
+               width="800"
+               height="310"
+               xlink:href="data:image/png;base64,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"
+               preserveAspectRatio="xMidYMid meet"
+               transform="matrix(.3 0 0 0.3 127.999878 446.379989)" />
+            <rect
+               id="bg-s-rect8"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(.76 0 0 0.86 152.531754 427.180642)"
+               fill="#fff"
+               fill-opacity="0.13"
+               stroke-width="0" />
+            <path
+               id="bg-s-path14"
+               d="M128.66472,588.50707v-187.95312h238.67031v187.95312h-238.67031Zm232.38952-7.83138v-172.29036h-226.10871v172.29036h226.10871Z"
+               transform="matrix(.9 0 0 0.85 24.799987 74.179577)"
+               fill="#fff"
+               fill-opacity="0.5"
+               stroke-width="0" />
+            <path
+               id="bg-s-path15"
+               d="M128.66472,588.50707v-187.95312h238.67031v187.95312h-238.67031Zm232.38952-7.83138v-172.29036h-226.10871v172.29036h226.10871Z"
+               fill="#fff"
+               fill-opacity="0.5"
+               stroke-width="0" />
+            <rect
+               id="bg-s-rect9"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(1.031685 0 0 0.062705 118.403785 379.619843)"
+               stroke="#fff"
+               stroke-width="4" />
+            <rect
+               id="bg-s-rect10"
+               width="251.231905"
+               height="156.6276"
+               rx="0"
+               ry="0"
+               transform="matrix(1.031685 0 0 0.305824 118.403785 332.58027)"
+               fill="#c3bf0d"
+               stroke="#fff"
+               stroke-width="4" />
+            </g>
+            <g
+               id="bg-u-deskgroup"
+               transform="matrix(4 0 0 4-1050.258575-237.616028)">
+            <g
+               id="bg-u-desk">
+               <polygon
+                  id="bg-s-polygon78"
+                  points="165.28,348.48 235.905,306.662 453.28,305.208 519.841,342.86"
+                  fill="url(#bg-s-polygon78-fill)" />
+               <polygon
+                  id="bg-s-polygon79"
+                  points="235.905,306.662 165.28,348.48 519.841,342.86 172.5,346.89"
+                  opacity="0.5"
+                  fill="#ffffd7" />
+               <polygon
+                  id="bg-s-polygon80"
+                  points="241.06,309.38 466.25,316 490.5,334.917 183,344.405"
+                  opacity="0.2"
+                  fill="url(#bg-s-polygon80-fill)" />
+            </g>
+            <g
+               id="bg-u-papers">
+               <polygon
+                  id="bg-s-polygon81"
+                  points="363.895,330.355 375.23,330.563 377.333,336.25 363.833,335.935"
+                  opacity="0.2"
+                  fill="#7e2275" />
+               <g
+                  id="bg-s-g19"
+                  opacity="0.2">
+                  <path
+                     id="bg-s-path16"
+                     d="M377.333,338.851c-.001,0-.002,0-.003,0l-34.639-.375c-.138-.002-.249-.114-.247-.253.001-.137.113-.247.25-.247.001,0,.002,0,.003,0l34.639.375c.138.002.249.114.247.253-.002.136-.113.247-.25.247Z"
+                     fill="#7e2275" />
+               </g>
+               <g
+                  id="bg-s-g20"
+                  opacity="0.2">
+                  <path
+                     id="bg-s-path17"
+                     d="M377.333,340.667h-36.715c-.138,0-.25-.112-.25-.25s.112-.25.25-.25h36.715c.138,0,.25.112.25.25s-.112.25-.25.25Z"
+                     fill="#7e2275" />
+               </g>
+               <g
+                  id="bg-s-g21"
+                  opacity="0.2">
+                  <path
+                     id="bg-s-path18"
+                     d="M379.643,342.655c-.005,0-.009,0-.014,0l-40.429-.221c-.138-.008-.244-.126-.236-.264.008-.137.138-.236.263-.236l40.429.221c.138.008.243.126.236.264-.007.133-.118.236-.249.236Z"
+                     fill="#7e2275" />
+               </g>
+               <polygon
+                  id="bg-s-polygon82"
+                  points="346,336.594 345.5,337.458 367.961,337.695 368.313,336.875"
+                  fill="#abff7c" />
+               <polygon
+                  id="bg-s-polygon83"
+                  points="352.563,339.063 352.188,339.969 371.781,339.969 372.125,339.063"
+                  fill="#abff7c" />
+               <polygon
+                  id="bg-s-polygon84"
+                  points="385.491,330.685 392.875,342.185 410.365,341.51 399.625,330.685"
+                  fill="url(#bg-s-polygon84-fill)" />
+               <polygon
+                  id="bg-s-polygon85"
+                  points="405.239,337.547 399.25,331.313 387.125,331.313 391.366,337.976"
+                  opacity="0.2"
+                  fill="#7e2275" />
+               <polygon
+                  id="bg-s-polygon86"
+                  points="399.625,330.685 404.795,335.424 410.365,341.51"
+                  opacity="0.5"
+                  fill="#7e2275" />
+            </g>
+            <g
+               id="bg-u-pcgroup">
+               <g
+                  id="bg-u-keyboard"
+                  transform="translate(-39.822998 13.857129)">
+                  <polygon
+                     id="bg-s-polygon87"
+                     points="328.523,311.179 447.166,313.381 454.064,326.939 310.703,325.004"
+                     fill="url(#bg-s-polygon87-fill)" />
+                  <polygon
+                     id="bg-s-polygon88"
+                     points="310.703,325.004 454.064,326.939 454.064,329.504 311.828,328.004"
+                     fill="url(#bg-s-polygon88-fill)" />
+                  <polygon
+                     id="bg-s-polygon89"
+                     points="451.349,321.603 331.353,320.583 451.956,322.796"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon89-fill)" />
+                  <polygon
+                     id="bg-s-polygon90"
+                     points="321.132,316.913 449.808,318.575 450.148,319.242 320.937,317.064"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon90-fill)" />
+                  <polygon
+                     id="bg-s-polygon91"
+                     points="332.953,325.004 344.453,313.381 333.369,325.324"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon91-fill)" />
+                  <polygon
+                     id="bg-s-polygon92"
+                     points="395.24,326.197 404.577,312.591 405.078,312.591 395.943,326.197"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon92-fill)" />
+                  <polygon
+                     id="bg-s-polygon93"
+                     points="340.826,324.558 343.953,321.889 389.392,322.624 388.498,325.004"
+                     opacity="0.2"
+                     fill="#fff" />
+                  <polygon
+                     id="bg-s-polygon94"
+                     points="329.203,311.837 327.053,313.92 332.953,313.92 334.994,311.837"
+                     opacity="0.2"
+                     fill="#fff" />
+                  <polygon
+                     id="bg-s-polygon95"
+                     points="406.828,313.92 405.603,315.254 444.393,315.837 445.953,313.92"
+                     opacity="0.2"
+                     fill="#fff" />
+                  <polygon
+                     id="bg-s-polygon96"
+                     points="421.87,323.447 421.12,325.004 436.983,325.004 437.87,323.447"
+                     opacity="0.2"
+                     fill="#fff" />
+                  <polygon
+                     id="bg-s-polygon97"
+                     points="345.823,320.254 347.953,318.247 354.911,318.247 353.411,320.254"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon97-fill)" />
+                  <polygon
+                     id="bg-s-polygon98"
+                     points="355.786,318.247 360.37,318.247 358.933,320.254 354.453,320.254"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon98-fill)" />
+                  <polygon
+                     id="bg-s-polygon99"
+                     points="379.871,316.444 382.12,313.92 399.926,314.195 397.838,316.656"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon99-fill)" />
+                  <polygon
+                     id="bg-s-polygon100"
+                     points="327.053,317.896 333.245,317.896 331.641,319.895 325.453,319.837"
+                     opacity="0.2"
+                     fill="#fff" />
+                  <polygon
+                     id="bg-s-polygon101"
+                     points="313.578,324.225 329.203,311.837 441.843,313.92 388.498,314.019 316.545,322.624"
+                     opacity="0.2"
+                     fill="url(#bg-s-polygon101-fill)" />
+               </g>
+               <g
+                  id="bg-u-mouse"
+                  transform="translate(-40.000002 0.142857)">
+                  <path
+                     id="bg-s-path19"
+                     d="M476.562,334.837c0,0,16.005.669,19.317-.653c3.313-1.322-26.614-7.547-26.614-7.547l7.297,8.2Z"
+                     opacity="0.5"
+                     fill="#7e2275" />
+                  <g
+                     id="bg-s-g22">
+                  <path
+                     id="bg-s-path20"
+                     d="M486.685,332.052c-.57,1.63-1.87,2.71-2.37,2.76-2.54.3-6.09.13-7.34.13-.84,0-7.16-3.54-11.2-6.75-.01,0-.01,0-.02-.01-1.95-1.55-3.37-3.02-3.37-3.96c0-.18.29-.36.75-.53c0,0,0,0,.01,0c1.87-.72,6.54-1.39,6.54-1.39s8.35-.47,13.4,2.49c.67.39,1.29.85,1.82,1.38c2.2,2.2,2.34,4.31,1.78,5.88Z"
+                     fill="url(#bg-s-path20-fill)" />
+                  <path
+                     id="bg-s-path21"
+                     d="M484.905,326.172c0,0-3.52,1.73-8.33,1.19-4.73-.54-13.17-3.57-13.43-3.67c1.87-.72,6.54-1.39,6.54-1.39s8.35-.47,13.4,2.49l1.82,1.38Z"
+                     opacity="0.2"
+                     fill="url(#bg-s-path21-fill)" />
+                  <path
+                     id="bg-s-path22"
+                     d="M464.216,326.868c0,0,4.924-.919,8.32.914s4.026,7.055,4.026,7.055-7.943-3.565-12.346-7.969Z"
+                     fill="url(#bg-s-path22-fill)" />
+                  <path
+                     id="bg-s-path23"
+                     d="M486.685,332.052c-.57,1.63-1.87,2.71-2.37,2.76-2.54.3-6.09.13-7.34.13-.84,0-7.16-3.54-11.2-6.75.65.37,9.61,5.33,16.08,4.78c2.15-.19,3.71-.53,4.83-.92Z"
+                     opacity="0.2"
+                     fill="url(#bg-s-path23-fill)" />
+                  </g>
+               </g>
+               <g
+                  id="bg-u-monitorgroup"
+                  transform="translate(-90.851501 0)">
+                  <g
+                     id="bg-u-monitor">
+                  <polygon
+                     id="bg-s-polygon102"
+                     points="415.049,311.379 421.189,305.809 438.044,305.845 443.553,311.379"
+                     fill="#12002e" />
+                  <g
+                     id="bg-s-g23">
+                     <polygon
+                        id="bg-s-polygon103"
+                        points="491.829,303.323 373.92,303.323 370.861,227.55 494.889,224.915"
+                        fill="url(#bg-s-polygon103-fill)" />
+                     <polygon
+                        id="bg-s-polygon104"
+                        points="489.814,301.204 375.931,301.204 372.977,228.844 492.67,228.844"
+                        fill="url(#bg-s-polygon104-fill)" />
+                     <a href="mailto:Shahriyar.Ceyhunoghlu@gmail.com">
+                        <g
+                           id="bg-u-email"
+                           transform="matrix(2 0 0 2-494.858466-179.358799)">
+                           <polygon
+                              id="bg-s-polygon105"
+                              points="476.804706,218.502 490.276928,218.502 490.215823,235.612887 476.804706,235.46106"
+                              transform="matrix(1 0 0 0.787348-.058841 46.310489)"
+                              fill="#f5f6f7" />
+                           <g
+                              id="bg-u-envelope-at-fill"
+                              transform="matrix(.6 0 0 0.6 478.681976 220.30862)">
+                           <path
+                              id="bg-s-path24"
+                              d="M2,2c-.933173-.000063-1.742369.645219-1.95,1.555L8,8.414l7.95-4.859C15.742369,2.645219,14.933173,1.999937,14,2L2,2ZM0,11.8v-7.102L5.803,8.244L0,11.8ZM6.761,8.83l-6.57,4.026C0.522051,13.555059,1.226516,14.000558,2,14h6.256c-.169866-.481842-.256437-.989093-.256-1.5-.001387-1.329817.586775-2.591837,1.606-3.446l-.367-.225L8,9.586L6.761,8.83ZM16,9.671v-4.974L10.197,8.243l.338.208c.61246-.297014,1.28432-.451217,1.965-.451c1.414,0,2.675.652,3.5,1.671" />
+                           <path
+                              id="bg-s-path25"
+                              d="M15.834,12.244c0,1.168-.577,2.025-1.587,2.025-.503,0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77,0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4,1.26-1.4.585,0,.87.333.953.63h.03v-.568h.905v2.19c0,.272.18.42.411.42.315,0,.639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582,0-2.64,1.067-2.64,2.724v.157c0,1.867,1.237,2.654,2.57,2.654h.045c.507,0,.935-.07,1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438,16,9,14.82,9,12.646v-.214C9,10.36,10.421,9,12.485,9h.035c2.12,0,3.314,1.43,3.314,3.034v.21Zm-4.04.21v.227c0,.586.227.8.581.8.31,0,.564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346,0-.573.245-.573.791" />
+                           </g>
+                        </g>
+                     </a>
+                     <a href="https://www.linkedin.com/in/shahriyar-huseynli">
+                        <g
+                           id="bg-u-linkedin"
+                           transform="matrix(1.814464 0 0 1.713938-454.787226 22.12034)">
+                           <polygon
+                              id="bg-s-polygon106"
+                              points="481.148105,134.081186 499.987734,134.186176 500.063686,157.060484 481.148105,157.060484"
+                              transform="matrix(.785057 0 0 0.684128 105.274353 45.992228)"
+                              fill="#f5f6f7" />
+                           <path
+                              id="bg-u-linkedin2"
+                              d="M0,1.146C0,0.513,0.526,0,1.175,0h13.65C15.474,0,16,0.513,16,1.146v13.708C16,15.487,15.474,16,14.825,16h-13.65C0.526,16,0,15.487,0,14.854L0,1.146ZM4.943,13.394v-7.225h-2.401v7.225h2.401Zm-1.2-8.212c.837,0,1.358-.554,1.358-1.248-.015-.709-.52-1.248-1.342-1.248s-1.359.54-1.359,1.248c0,.694.521,1.248,1.327,1.248h.016Zm4.908,8.212v-4.035c0-.216.016-.432.08-.586.173-.431.568-.878,1.232-.878.869,0,1.216.662,1.216,1.634v3.865h2.401v-4.144c0-2.22-1.184-3.252-2.764-3.252-1.274,0-1.845.7-2.165,1.193v.025h-.016l.016-.025v-1.022h-2.4c.03.678,0,7.225,0,7.225h2.4Z"
+                              transform="matrix(.75 0 0 0.75 484.402994 139.568148)" />
+                        </g>
+                     </a>
+                     <a href="https://www.github.com/ShahriyarHuseynli">
+                        <g
+                           id="bg-u-github"
+                           transform="matrix(1.6 0 0 1.6-405.770734-44.166438)">
+                           <polygon
+                              id="bg-s-polygon107"
+                              points="494.187,188.31095 511.027277,188.362555 511.027276,210.765342 494.187,210.765342"
+                              transform="matrix(1 0 0 0.749977-.033589 47.586292)"
+                              fill="#f5f6f7" />
+                           <path
+                              id="bg-u-github2"
+                              d="M8,0C3.58,0,0,3.58,0,8c0,3.54,2.29,6.53,5.47,7.59.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01,1.08.58,1.23.82.72,1.21,1.87.87,2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12c0,0,.67-.21,2.2.82.64-.18,1.32-.27,2-.27s1.36.09,2,.27c1.53-1.04,2.2-.82,2.2-.82.44,1.1.16,1.92.08,2.12.51.56.82,1.27.82,2.15c0,3.07-1.87,3.75-3.65,3.95.29.25.54.73.54,1.48c0,1.07-.01,1.93-.01,2.2c0,.21.15.46.55.38C13.807023,14.491437,16.000045,11.437302,16,8c0-4.42-3.58-8-8-8"
+                              transform="matrix(.8 0 0 0.8 495.757394 190.99379)" />
+                        </g>
+                     </a>
+                     <rect
+                        id="bg-s-rect11"
+                        width="244.870547"
+                        height="12.3768"
+                        rx="0"
+                        ry="0"
+                        transform="matrix(.48 0 0 0.63 375.082096 229.82725)"
+                        fill="#bec5d5"
+                        stroke-width="0" />
+                     <rect
+                        id="bg-s-rect12"
+                        width="244.870547"
+                        height="12.3768"
+                        rx="0"
+                        ry="0"
+                        transform="matrix(.276785 0 0-.289745 399.407224 235.796778)"
+                        fill="#f5f6f7"
+                        stroke-width="0" />
+                     <rect
+                        id="bg-s-rect13"
+                        width="244.870547"
+                        height="12.3768"
+                        rx="0"
+                        ry="0"
+                        transform="matrix(.017554 0 0-.295347 475.377289 233.760478)"
+                        fill="#f5f6f7"
+                        stroke-width="0" />
+                     <rect
+                        id="bg-s-rect14"
+                        width="244.870547"
+                        height="12.3768"
+                        rx="0"
+                        ry="0"
+                        transform="matrix(.017554 0 0-.295347 486.210623 233.760478)"
+                        fill="#d12e27"
+                        stroke-width="0" />
+                     <line
+                        id="bg-s-line1"
+                        x1="-6.399032"
+                        y1="-4.804035"
+                        x2="6.399032"
+                        y2="4.804034"
+                        transform="matrix(.25 0 0 0.25 488.359852 231.932753)"
+                        fill="none"
+                        stroke="#f5f6f7"
+                        stroke-width="3" />
+                     <line
+                        id="bg-s-line2"
+                        x1="-6.399032"
+                        y1="-4.804035"
+                        x2="6.399032"
+                        y2="4.804034"
+                        transform="matrix(-.06048 0.242574-.242574-.06048 488.359852 231.932753)"
+                        fill="none"
+                        stroke="#f5f6f7"
+                        stroke-width="3" />
+                     <rect
+                        id="bg-s-rect15"
+                        width="244.870547"
+                        height="12.3768"
+                        rx="0"
+                        ry="0"
+                        transform="matrix(.017554 0 0-.295347 480.655067 233.760478)"
+                        fill="#f5f6f7"
+                        stroke-width="0" />
+                     <polygon
+                        id="bg-s-polygon108"
+                        points="375.931,301.204 376.213,301.204 374.24,230.124 492.67,229.697 492.67,228.844 372.977,228.844"
+                        fill="#090327" />
+                     <rect
+                        id="bg-s-rect16"
+                        width="117.91"
+                        height="2.486"
+                        rx="0"
+                        ry="0"
+                        transform="translate(373.92 303.323)"
+                        fill="url(#bg-s-rect16-fill)" />
+                     <polygon
+                        id="bg-s-polygon109"
+                        points="376.213,301.204 489.814,301.204 492.67,228.844 489.127,300.386"
+                        fill="#ffffe0" />
+                     <path
+                        id="bg-s-path26"
+                        d="M377.013,299.49l-1.814-68.37h93.161c0,0-88.098,2.327-88.574,3.591-.817,2.169-2.773,64.779-2.773,64.779Z"
+                        opacity="0.5"
+                        fill="#fff" />
+                     <polygon
+                        id="bg-s-polygon110"
+                        points="412.251,303.323 415.025,305.809 449.32,305.809 451.613,303.323"
+                        fill="#fffdf1" />
+                     <rect
+                        id="bg-s-rect17"
+                        width="117.91"
+                        height="0.566"
+                        rx="0"
+                        ry="0"
+                        transform="translate(373.92 303.323)"
+                        fill="#ffffe0" />
+                     <polygon
+                        id="bg-s-polygon111"
+                        points="373.147,284.177 375.156,282.222 372.977,228.844 440.164,228.844 446.564,227.55 370.861,227.55"
+                        opacity="0.34"
+                        fill="url(#bg-s-polygon111-fill)" />
+                  </g>
+                  <polygon
+                     id="bg-s-polygon112"
+                     points="494.889,224.915 495.963,227.55 492.67,305.161 491.829,305.809"
+                     fill="#12002e" />
+                  </g>
+                  <g
+                     id="bg-u-stickers"
+                     transform="translate(.000001 0)">
+                  <polygon
+                     id="bg-s-polygon113"
+                     points="469.655,225.451 492.67,226.25 489.875,250.375 469.655,248.375"
+                     transform="translate(-94.710502 1.254593)"
+                     fill="#d12e27" />
+                  <polygon
+                     id="bg-s-polygon114"
+                     points="382.188,216.188 382.375,228.844 401.96,228.844 401.96,216.188"
+                     transform="translate(88.888896 0)"
+                     fill="#ffff7c" />
+                  <polygon
+                     id="bg-s-polygon115"
+                     points="471.585,248.566 472.333,249.583 491,251.333 492.67,226.25 489.875,250.375"
+                     transform="translate(-95.000006 0.555556)"
+                     opacity="0.5"
+                     fill="#7e2275" />
+                  </g>
+               </g>
+            </g>
+            <g
+               id="bg-u-notebook"
+               transform="translate(-57.14286-20.000001)">
+               <polygon
+                  id="bg-s-polygon116"
+                  points="452.433,335.011 453.498,335.011 456.057,337.496 455.321,338.781 454.054,338.781"
+                  fill="#367586" />
+               <polygon
+                  id="bg-s-polygon117"
+                  points="420.243,334.225 451.642,334.225 454.936,337.496 419.682,337.828"
+                  fill="url(#bg-s-polygon117-fill)" />
+               <polygon
+                  id="bg-s-polygon118"
+                  points="454.936,337.496 454.118,339.114 419.682,339.645 419.682,337.828"
+                  fill="#368686" />
+               <polygon
+                  id="bg-s-polygon119"
+                  points="429.74,334.225 430.429,337.601 430.429,339.473 430.864,339.473 430.864,337.722 429.891,334.225"
+                  fill="#368686" />
+               <polygon
+                  id="bg-s-polygon120"
+                  points="421.551,336.491 437.309,336.491 435.627,335.276 421.551,335.65"
+                  opacity="0.2"
+                  fill="url(#bg-s-polygon120-fill)" />
+               <polygon
+                  id="bg-s-polygon121"
+                  points="420.92,336.491 421.271,335.65 434.727,335.65 434.727,336.026 421.598,336.026 421.551,336.491"
+                  fill="#368686" />
+               <polygon
+                  id="bg-s-polygon122"
+                  points="434.727,335.65 433.682,334.371 421.678,334.371 421.271,335.65"
+                  fill="url(#bg-s-polygon122-fill)" />
+            </g>
+            <g
+               id="bg-u-desklamp"
+               transform="translate(-15.714281 0)">
+               <ellipse
+                  id="bg-s-ellipse1"
+                  rx="29.385"
+                  ry="2.747"
+                  transform="translate(270.978 315.381)"
+                  opacity="0.5" />
+               <path
+                  id="bg-s-path27"
+                  d="M272.464,313.331c.05,1.989-6.992,3.778-15.727,3.996s-15.857-1.219-15.907-3.208s6.992-3.778,15.727-3.996c8.736-.218,15.857,1.218,15.907,3.208Z"
+                  fill="url(#bg-s-path27-fill)" />
+               <g
+                  id="bg-s-g24">
+                  <g
+                     id="bg-s-g25">
+                  <g
+                     id="bg-s-g26"
+                     clip-path="url(#bg-u-svgid_00000141455229119808385060000008785888619582778778_)">
+                     <rect
+                        id="bg-s-rect18"
+                        width="31.725"
+                        height="7.035"
+                        rx="0"
+                        ry="0"
+                        transform="translate(240.778 309.92)"
+                        fill="#544873" />
+                     <path
+                        id="bg-s-path28"
+                        d="M264.63,310.803c.901,6.252-6.872,12.547-17.362,14.059v-6.907h-7.491v-9.035h18.135v-5.319c3.733,1.553,6.267,4.076,6.718,7.202Z"
+                        fill="#544873" />
+                     <path
+                        id="bg-s-path29"
+                        d="M264.036,310.889c.873,6.057-6.657,12.154-16.819,13.62v-6.553h-7.44v-9.035h17.751v-5.009c3.617,1.504,6.072,3.949,6.508,6.977Z"
+                        fill="#544974" />
+                     <path
+                        id="bg-s-path30"
+                        d="M263.443,310.975c.845,5.861-6.442,11.762-16.277,13.18v-6.199h-7.389v-9.035h17.368v-4.698c3.5,1.455,5.875,3.821,6.298,6.752Z"
+                        fill="#554a74" />
+                     <path
+                        id="bg-s-path31"
+                        d="M262.849,311.06c.817,5.666-6.227,11.37-15.734,12.741v-5.846h-7.338v-9.035h16.984v-4.387c3.383,1.407,5.68,3.694,6.088,6.527Z"
+                        fill="#554b75" />
+                     <path
+                        id="bg-s-path32"
+                        d="M262.256,311.146c.789,5.471-6.013,10.978-15.191,12.302v-5.492h-7.287v-9.035h4.43v-5.283c9.179-1.324,17.259,2.037,18.048,7.508Z"
+                        fill="#564c75" />
+                     <path
+                        id="bg-s-path33"
+                        d="M261.662,311.231c.761,5.275-5.798,10.586-14.649,11.862v-5.138h-7.236v-9.035h4.481v-4.93c8.852-1.275,16.644,1.966,17.404,7.241Z"
+                        fill="#564d76" />
+                     <path
+                        id="bg-s-path34"
+                        d="M261.069,311.317c.732,5.08-5.583,10.194-14.106,11.423v-4.784h-7.185v-9.035h4.532v-4.576c8.523-1.229,16.026,1.892,16.759,6.972Z"
+                        fill="#564e77" />
+                     <path
+                        id="bg-s-path35"
+                        d="M260.475,311.403c.704,4.884-5.368,9.802-13.564,10.984v-4.431h-7.134v-9.035h4.583v-4.222c8.196-1.182,15.411,1.819,16.115,6.704Z"
+                        fill="#574f77" />
+                     <path
+                        id="bg-s-path36"
+                        d="M259.882,311.488c.676,4.689-5.154,9.41-13.021,10.544v-4.077h-7.083v-8.964h-5.08c2.356-1.908,5.781-3.372,9.714-3.939c7.867-1.134,14.793,1.747,15.47,6.436Z"
+                        fill="#575078" />
+                     <path
+                        id="bg-s-path37"
+                        d="M259.288,311.574c.648,4.494-4.939,9.018-12.479,10.105v-3.723h-7.032v-8.775h-4.624c2.258-1.829,5.54-3.231,9.31-3.775c7.54-1.087,14.177,1.674,14.825,6.168Z"
+                        fill="#575179" />
+                     <path
+                        id="bg-s-path38"
+                        d="M258.694,311.659c.62,4.298-4.724,8.626-11.936,9.665v-3.369h-6.981v-8.585h-4.169c2.16-1.749,5.299-3.091,8.905-3.611c7.213-1.039,13.562,1.602,14.181,5.9Z"
+                        fill="#585279" />
+                     <path
+                        id="bg-s-path39"
+                        d="M258.101,311.745c.592,4.103-4.51,8.234-11.394,9.226-6.884.993-12.944-1.529-13.536-5.632h6.606v-5.78h-3.713c2.062-1.67,5.058-2.951,8.5-3.447c6.885-.991,12.945,1.53,13.537,5.633Z"
+                        fill="#58537a" />
+                     <path
+                        id="bg-s-path40"
+                        d="M257.507,311.831c.563,3.908-4.295,7.842-10.851,8.787s-12.328-1.456-12.891-5.363s4.295-7.842,10.851-8.787c6.556-.946,12.328,1.455,12.891,5.363Z"
+                        fill="#59547a" />
+                     <path
+                        id="bg-s-path41"
+                        d="M256.914,311.916c.535,3.712-4.08,7.449-10.309,8.348-6.228.898-11.712-1.383-12.247-5.095s4.08-7.449,10.309-8.348s11.711,1.383,12.247,5.095Z"
+                        fill="#59557b" />
+                     <path
+                        id="bg-s-path42"
+                        d="M256.32,312.002c.507,3.517-3.865,7.057-9.766,7.908s-11.095-1.31-11.602-4.827s3.865-7.057,9.766-7.908s11.095,1.31,11.602,4.827Z"
+                        fill="#59567c" />
+                     <path
+                        id="bg-s-path43"
+                        d="M255.727,312.087c.479,3.321-3.65,6.665-9.223,7.469s-10.479-1.237-10.958-4.559c-.479-3.321,3.65-6.665,9.223-7.469c5.573-.803,10.479,1.238,10.958,4.559Z"
+                        fill="#5a577c" />
+                     <path
+                        id="bg-s-path44"
+                        d="M255.133,312.173c.451,3.126-3.436,6.273-8.681,7.029s-9.862-1.165-10.313-4.291s3.436-6.273,8.681-7.029s9.862,1.165,10.313,4.291Z"
+                        fill="#5a597d" />
+                     <path
+                        id="bg-s-path45"
+                        d="M254.539,312.259c.423,2.931-3.221,5.881-8.138,6.59s-9.246-1.092-9.669-4.023s3.221-5.881,8.138-6.59c4.918-.709,9.247,1.092,9.669,4.023Z"
+                        fill="#5b5a7d" />
+                     <path
+                        id="bg-s-path46"
+                        d="M253.946,312.344c.394,2.735-3.006,5.489-7.596,6.151-4.589.662-8.63-1.019-9.024-3.754s3.006-5.489,7.596-6.151c4.589-.662,8.629,1.019,9.024,3.754Z"
+                        fill="#5b5b7e" />
+                     <path
+                        id="bg-s-path47"
+                        d="M253.352,312.43c.366,2.54-2.792,5.097-7.053,5.712s-8.013-.946-8.379-3.486s2.792-5.097,7.053-5.712s8.013.946,8.379,3.486Z"
+                        fill="#5b5c7f" />
+                     <path
+                        id="bg-s-path48"
+                        d="M252.759,312.515c.338,2.345-2.577,4.705-6.511,5.272s-7.397-.874-7.735-3.218c-.338-2.345,2.577-4.705,6.511-5.272s7.397.874,7.735,3.218Z"
+                        fill="#5c5d7f" />
+                     <path
+                        id="bg-s-path49"
+                        d="M252.165,312.601c.31,2.149-2.362,4.313-5.968,4.833s-6.78-.801-7.09-2.95s2.362-4.313,5.968-4.833s6.78.801,7.09,2.95Z"
+                        fill="#5c5e80" />
+                     <path
+                        id="bg-s-path50"
+                        d="M251.572,312.686c.282,1.954-2.147,3.921-5.426,4.393-3.278.473-6.164-.728-6.446-2.682s2.147-3.921,5.426-4.393c3.278-.472,6.164.729,6.446,2.682Z"
+                        fill="#5d5f80" />
+                     <path
+                        id="bg-s-path51"
+                        d="M250.978,312.772c.254,1.758-1.933,3.529-4.883,3.954s-5.548-.655-5.801-2.414c-.254-1.758,1.933-3.529,4.883-3.954s5.548.656,5.801,2.414Z"
+                        fill="#5d6081" />
+                     <path
+                        id="bg-s-path52"
+                        d="M250.384,312.858c.225,1.563-1.718,3.137-4.34,3.515s-4.931-.582-5.157-2.145c-.225-1.563,1.718-3.137,4.34-3.515c2.623-.379,4.932.582,5.157,2.145Z"
+                        fill="#5d6182" />
+                     <path
+                        id="bg-s-path53"
+                        d="M249.791,312.943c.197,1.368-1.503,2.745-3.798,3.075-2.295.331-4.315-.51-4.512-1.877-.197-1.368,1.503-2.745,3.798-3.075c2.295-.331,4.315.51,4.512,1.877Z"
+                        fill="#5e6282" />
+                     <path
+                        id="bg-s-path54"
+                        d="M249.197,313.029c.169,1.172-1.288,2.353-3.255,2.636s-3.698-.437-3.867-1.609s1.288-2.352,3.255-2.636s3.698.437,3.867,1.609Z"
+                        fill="#5e6383" />
+                     <path
+                        id="bg-s-path55"
+                        d="M248.604,313.114c.141.977-1.074,1.96-2.713,2.197-1.639.236-3.082-.364-3.223-1.341s1.074-1.96,2.713-2.197c1.639-.236,3.082.364,3.223,1.341Z"
+                        fill="#5e6484" />
+                     <path
+                        id="bg-s-path56"
+                        d="M248.01,313.2c.113.782-.859,1.568-2.17,1.757s-2.466-.291-2.578-1.073c-.113-.782.859-1.568,2.17-1.757s2.466.291,2.578,1.073Z"
+                        fill="#5f6584" />
+                     <path
+                        id="bg-s-path57"
+                        d="M247.417,313.285c.085.586-.644,1.176-1.628,1.318-.983.142-1.849-.218-1.934-.804s.644-1.176,1.628-1.318c.983-.142,1.849.218,1.934.804Z"
+                        fill="#5f6685" />
+                     <path
+                        id="bg-s-path58"
+                        d="M246.823,313.371c.056.391-.43.784-1.085.879-.656.095-1.233-.146-1.289-.536-.056-.391.429-.784,1.085-.879s1.233.145,1.289.536Z"
+                        fill="#606785" />
+                     <path
+                        id="bg-s-path59"
+                        d="M246.23,313.457c.028.195-.215.392-.543.439s-.616-.073-.645-.268c-.028-.195.215-.392.543-.439.328-.048.616.072.645.268Z"
+                        fill="#606886" />
+                     <clipPath
+                        id="bg-u-svgid_00000141455229119808385060000008785888619582778778_">
+                        <use
+                           id="bg-s-use2"
+                           width="31.634415"
+                           height="6.647675"
+                           xlink:href="#bg-u-svgid_00000045581309257158306430000005884124911577253256_2" />
+                     </clipPath>
+                  </g>
+                  </g>
+               </g>
+               <path
+                  id="bg-s-path60"
+                  d="M267.095,312.064c.03,1.208-4.639,2.304-10.429,2.448s-10.508-.718-10.538-1.926s4.639-2.304,10.429-2.448c5.791-.144,10.508.718,10.538,1.926Z"
+                  opacity="0.2"
+                  fill="url(#bg-s-path60-fill)" />
+               <path
+                  id="bg-s-path61"
+                  d="M258.412,310.927c.01.401-1.254.759-2.824.798s-2.85-.255-2.86-.656c-.01-.402,1.254-.759,2.824-.798c1.569-.039,2.85.255,2.86.656Z"
+                  fill="url(#bg-s-path61-fill)" />
+               <polygon
+                  id="bg-s-polygon123"
+                  points="253.388,231.689 243.301,275.332 246.338,274.638 256.901,232.607"
+                  fill="url(#bg-s-polygon123-fill)" />
+               <polygon
+                  id="bg-s-polygon124"
+                  points="242.382,273.977 254.759,311.117 256.008,310.854 246.93,275.332"
+                  fill="url(#bg-s-polygon124-fill)" />
+               <path
+                  id="bg-s-path62"
+                  d="M253.712,229.057c-4.163.689-7.021,4.375-6.383,8.233l15.077-2.495c-.638-3.858-4.531-6.427-8.694-5.738Z"
+                  fill="url(#bg-s-path62-fill)" />
+               <g
+                  id="bg-s-g27">
+                  <path
+                     id="bg-s-path63"
+                     d="M288.666,251.876L234.04,265.76c-.631-3.814-.564-7.78.185-11.594c1.995-10.373,8.925-19.626,20.114-21.47c4.723-.783,9.371-.606,13.682.429c9.649,2.308,17.58,8.926,20.645,18.751Z"
+                     fill="url(#bg-s-path63-fill)" />
+                  <path
+                     id="bg-s-path64"
+                     d="M288.67,251.88c.645,2.54-11.062,7.706-26.148,11.539-15.087,3.833-27.84,4.881-28.485,2.342-.645-2.54,11.062-7.706,26.148-11.539c15.087-3.833,27.84-4.882,28.485-2.342Z"
+                     fill="url(#bg-s-path64-fill)" />
+                  <path
+                     id="bg-s-path65"
+                     d="M286.313,252.482c.534,2.091-10.21,6.621-23.997,10.121-13.786,3.501-25.391,4.65-25.925,2.559-.461-1.844,7.81-5.577,19.2-8.838c1.549-.443,3.151-.874,4.804-1.293c2.43-.615,4.783-1.155,7.023-1.618c10.499-2.182,18.454-2.649,18.895-.931Z"
+                     fill="url(#bg-s-path65-fill)" />
+                  <path
+                     id="bg-s-path66"
+                     d="M267.443,253.589c.303,3.38-2.195,6.359-5.574,6.662-2.801.251-5.334-1.416-6.277-3.926c1.549-.443,3.151-.874,4.804-1.293c2.43-.615,4.783-1.155,7.023-1.618.013.058.019.117.024.175Z"
+                     fill="url(#bg-s-path66-fill)" />
+               </g>
+               <path
+                  id="bg-s-path67"
+                  d="M234.2,262.794c0,0,4.911-3.017,9.753-4.841c0,0-1.263-15.641,9.472-24.835-.001-.001-19.787,7.504-19.225,29.676Z"
+                  opacity="0.2"
+                  fill="url(#bg-s-path67-fill)" />
+               <path
+                  id="bg-s-path68"
+                  d="M241.839,313.452l9.831-2.335.877.475-8.946,3.543c.001,0-1.762-.645-1.762-1.683Z"
+                  opacity="0.5"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path69"
+                  d="M265.282,314.715l1.123.667c0,0,4.315-.581,5.473-2.255l-1.929-.306c-.001-.001-.387.841-4.667,1.894Z"
+                  opacity="0.5"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path70"
+                  d="M274.403,237.29c0,0,8.772,5.929,11.929,12.524h-5.404c0,0-1.613-5.964-6.525-12.524Z"
+                  opacity="0.5"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path71"
+                  d="M251.249,230.449c0,0-1.789,1.088-2.877,3.438l1.438-.491l1.439-2.947Z"
+                  opacity="0.5"
+                  fill="#fff" />
+               <polygon
+                  id="bg-s-polygon125"
+                  points="251.67,293.88 248.092,281.703 246.031,284.927 244.5,280.333 248.044,279.762"
+                  opacity="0.5"
+                  fill="url(#bg-s-polygon125-fill)" />
+               <path
+                  id="bg-s-path72"
+                  d="M250.052,276.539c0,2.115-1.838,3.829-4.106,3.829s-4.106-1.714-4.106-3.829s1.839-3.829,4.106-3.829s4.106,1.714,4.106,3.829Z"
+                  fill="url(#bg-s-path72-fill)" />
+               <g
+                  id="bg-s-g28">
+                  <g
+                     id="bg-s-g29">
+                  <g
+                     id="bg-s-g30"
+                     clip-path="url(#bg-u-svgid_00000004535117424445430250000003808483461978310794_)">
+                     <rect
+                        id="bg-s-rect19"
+                        width="8.212"
+                        height="7.658"
+                        rx="0"
+                        ry="0"
+                        transform="translate(240.932 272.71)"
+                        fill="#544873" />
+                     <path
+                        id="bg-s-path73"
+                        d="M247.769,275.417c.424,2.56-1.734,5.049-4.819,5.559s-5.93-1.151-6.353-3.711s1.734-5.049,4.819-5.559s5.929,1.151,6.353,3.711Z"
+                        fill="#544873" />
+                     <path
+                        id="bg-s-path74"
+                        d="M247.594,275.446c.41,2.48-1.68,4.891-4.669,5.386-2.989.494-5.744-1.115-6.155-3.595-.41-2.48,1.68-4.891,4.669-5.386c2.989-.494,5.745,1.115,6.155,3.595Z"
+                        fill="#544974" />
+                     <path
+                        id="bg-s-path75"
+                        d="M247.42,275.475c.397,2.4-1.626,4.733-4.518,5.212-2.892.478-5.559-1.079-5.956-3.479s1.626-4.733,4.518-5.212c2.892-.478,5.559,1.079,5.956,3.479Z"
+                        fill="#554a74" />
+                     <path
+                        id="bg-s-path76"
+                        d="M247.245,275.504c.384,2.32-1.572,4.576-4.367,5.038-2.796.463-5.374-1.043-5.758-3.363s1.572-4.576,4.368-5.038c2.796-.463,5.373,1.043,5.757,3.363Z"
+                        fill="#554b75" />
+                     <path
+                        id="bg-s-path77"
+                        d="M247.071,275.533c.371,2.24-1.517,4.418-4.217,4.865-2.699.447-5.188-1.007-5.559-3.247s1.517-4.418,4.217-4.865c2.699-.447,5.188,1.007,5.559,3.247Z"
+                        fill="#564c75" />
+                     <path
+                        id="bg-s-path78"
+                        d="M246.896,275.562c.357,2.16-1.463,4.26-4.066,4.691s-5.003-.971-5.36-3.131s1.463-4.26,4.066-4.691s5.003.971,5.36,3.131Z"
+                        fill="#564d76" />
+                     <path
+                        id="bg-s-path79"
+                        d="M246.721,275.591c.344,2.08-1.409,4.102-3.916,4.517s-4.818-.935-5.162-3.015s1.409-4.102,3.916-4.517s4.818.935,5.162,3.015Z"
+                        fill="#564e77" />
+                     <path
+                        id="bg-s-path80"
+                        d="M246.547,275.62c.331,2-1.355,3.944-3.765,4.343s-4.632-.899-4.963-2.899s1.355-3.944,3.765-4.343s4.632.899,4.963,2.899Z"
+                        fill="#574f77" />
+                     <path
+                        id="bg-s-path81"
+                        d="M246.372,275.648c.318,1.92-1.301,3.787-3.615,4.17s-4.447-.863-4.765-2.783s1.301-3.787,3.614-4.17c2.315-.383,4.449.863,4.766,2.783Z"
+                        fill="#575078" />
+                     <path
+                        id="bg-s-path82"
+                        d="M246.198,275.677c.304,1.84-1.246,3.629-3.464,3.996-2.217.367-4.262-.827-4.566-2.667-.305-1.84,1.246-3.629,3.464-3.996c2.217-.367,4.261.827,4.566,2.667Z"
+                        fill="#575179" />
+                     <path
+                        id="bg-s-path83"
+                        d="M246.023,275.706c.291,1.76-1.192,3.471-3.313,3.822s-4.077-.791-4.368-2.551s1.192-3.471,3.313-3.822s4.077.791,4.368,2.551Z"
+                        fill="#585279" />
+                     <path
+                        id="bg-s-path84"
+                        d="M245.849,275.735c.278,1.68-1.138,3.313-3.163,3.648s-3.891-.755-4.169-2.435s1.138-3.313,3.163-3.648c2.024-.335,3.891.755,4.169,2.435Z"
+                        fill="#58537a" />
+                     <path
+                        id="bg-s-path85"
+                        d="M245.674,275.764c.265,1.6-1.084,3.156-3.012,3.475s-3.706-.719-3.971-2.319s1.084-3.156,3.012-3.475c1.929-.319,3.706.719,3.971,2.319Z"
+                        fill="#59547a" />
+                     <ellipse
+                        id="bg-s-ellipse2"
+                        rx="3.362"
+                        ry="2.79"
+                        transform="matrix(.9866-.1632 0.1632 0.9866 242.177689 276.352577)"
+                        fill="#59557b" />
+                     <path
+                        id="bg-s-path86"
+                        d="M245.325,275.822c.238,1.44-.975,2.84-2.711,3.127-1.735.287-3.335-.647-3.574-2.087-.238-1.44.975-2.84,2.711-3.127c1.736-.288,3.336.647,3.574,2.087Z"
+                        fill="#59567c" />
+                     <path
+                        id="bg-s-path87"
+                        d="M245.15,275.851c.225,1.36-.921,2.682-2.56,2.953s-3.15-.611-3.375-1.971.921-2.682,2.56-2.953c1.639-.272,3.15.611,3.375,1.971Z"
+                        fill="#5a577c" />
+                     <path
+                        id="bg-s-path88"
+                        d="M244.976,275.879c.212,1.28-.867,2.524-2.41,2.78-1.543.255-2.965-.576-3.177-1.855-.212-1.28.867-2.525,2.41-2.78s2.965.575,3.177,1.855Z"
+                        fill="#5a597d" />
+                     <path
+                        id="bg-s-path89"
+                        d="M244.801,275.908c.199,1.2-.813,2.367-2.259,2.606s-2.779-.539-2.978-1.739.813-2.367,2.259-2.606s2.78.539,2.978,1.739Z"
+                        fill="#5b5a7d" />
+                     <path
+                        id="bg-s-path90"
+                        d="M244.627,275.937c.185,1.12-.759,2.209-2.108,2.432-1.35.223-2.594-.504-2.779-1.624s.759-2.209,2.108-2.432s2.593.504,2.779,1.624Z"
+                        fill="#5b5b7e" />
+                     <path
+                        id="bg-s-path91"
+                        d="M244.452,275.966c.172,1.04-.705,2.051-1.958,2.259-1.253.207-2.409-.467-2.581-1.508-.172-1.04.704-2.051,1.958-2.259c1.253-.207,2.409.468,2.581,1.508Z"
+                        fill="#5b5c7f" />
+                     <path
+                        id="bg-s-path92"
+                        d="M244.277,275.995c.159.96-.65,1.893-1.807,2.085-1.157.191-2.224-.432-2.382-1.392-.159-.96.65-1.893,1.807-2.085c1.157-.191,2.224.432,2.382,1.392Z"
+                        fill="#5c5d7f" />
+                     <path
+                        id="bg-s-path93"
+                        d="M244.103,276.024c.146.88-.596,1.736-1.657,1.911-1.061.176-2.038-.396-2.184-1.276s.596-1.736,1.657-1.911s2.038.396,2.184,1.276Z"
+                        fill="#5c5e80" />
+                     <path
+                        id="bg-s-path94"
+                        d="M243.928,276.053c.132.8-.542,1.578-1.506,1.737s-1.853-.36-1.985-1.16.542-1.578,1.506-1.737s1.853.36,1.985,1.16Z"
+                        fill="#5d5f80" />
+                     <path
+                        id="bg-s-path95"
+                        d="M243.754,276.082c.119.72-.488,1.42-1.355,1.564-.868.143-1.668-.324-1.787-1.044s.488-1.42,1.355-1.564c.868-.144,1.668.324,1.787,1.044Z"
+                        fill="#5d6081" />
+                     <path
+                        id="bg-s-path96"
+                        d="M243.579,276.111c.106.64-.434,1.262-1.205,1.39s-1.482-.288-1.588-.928.434-1.262,1.205-1.39s1.482.288,1.588.928Z"
+                        fill="#5d6182" />
+                     <path
+                        id="bg-s-path97"
+                        d="M243.405,276.139c.093.56-.379,1.104-1.054,1.216s-1.297-.252-1.39-.812.379-1.104,1.054-1.216c.675-.111,1.297.252,1.39.812Z"
+                        fill="#5e6282" />
+                     <path
+                        id="bg-s-path98"
+                        d="M243.23,276.168c.079.48-.325.947-.904,1.042-.578.096-1.112-.216-1.191-.696s.325-.947.904-1.042c.578-.095,1.112.216,1.191.696Z"
+                        fill="#5e6383" />
+                     <path
+                        id="bg-s-path99"
+                        d="M243.056,276.197c.066.4-.271.789-.753.869s-.926-.18-.993-.58c-.066-.4.271-.789.753-.869.482-.079.926.18.993.58Z"
+                        fill="#5e6484" />
+                     <path
+                        id="bg-s-path100"
+                        d="M242.881,276.226c.053.32-.217.631-.602.695-.386.064-.741-.144-.794-.464s.217-.631.603-.695c.384-.064.74.144.793.464Z"
+                        fill="#5f6584" />
+                     <path
+                        id="bg-s-path101"
+                        d="M242.706,276.255c.04.24-.162.473-.452.521-.289.048-.556-.108-.596-.348s.163-.473.452-.521c.29-.048.557.108.596.348Z"
+                        fill="#5f6685" />
+                     <path
+                        id="bg-s-path102"
+                        d="M242.532,276.284c.026.16-.108.315-.301.347s-.371-.072-.397-.232.108-.316.301-.348c.193-.031.37.073.397.233Z"
+                        fill="#606785" />
+                     <path
+                        id="bg-s-path103"
+                        d="M242.357,276.313c.013.08-.054.158-.151.174-.096.016-.185-.036-.199-.116-.013-.08.054-.158.151-.174s.186.036.199.116Z"
+                        fill="#606886" />
+                     <clipPath
+                        id="bg-u-svgid_00000004535117424445430250000003808483461978310794_">
+                        <use
+                           id="bg-s-use3"
+                           width="8.212006"
+                           height="7.65802"
+                           xlink:href="#bg-u-svgid_00000173867549299182838330000008531118779392084884_2" />
+                     </clipPath>
+                  </g>
+                  </g>
+               </g>
+               <ellipse
+                  id="bg-s-ellipse3"
+                  rx="1.723"
+                  ry="1.607"
+                  transform="translate(243.315 276.539)"
+                  opacity="0.5"
+                  fill="#fff" />
+               <polygon
+                  id="bg-s-polygon126"
+                  points="244.8,268.848 248.085,267.686 248.43,266.315 245.288,266.737"
+                  opacity="0.5"
+                  fill="url(#bg-s-polygon126-fill)" />
+               <path
+                  id="bg-s-path104"
+                  d="M254.759,311.117l16.458,3.274c0,0,.777-.14,1.219-1.255l-16.428-2.283-1.249.264Z"
+                  opacity="0.5"
+                  fill="url(#bg-s-path104-fill)" />
+               <path
+                  id="bg-s-path105"
+                  d="M268.021,233.126c-1.406,5.759-6.626,12.107-14.263,16.519-6.82,3.94-14.019,5.431-19.533,4.521c1.995-10.373,8.925-19.626,20.114-21.47c4.724-.782,9.371-.606,13.682.43Z"
+                  opacity="0.2"
+                  fill="url(#bg-s-path105-fill)" />
+            </g>
+            <g
+               id="bg-u-mugnshadow"
+               transform="translate(134.285721 2.857143)">
+               <ellipse
+                  id="bg-s-ellipse4"
+                  rx="13.391"
+                  ry="1.543"
+                  transform="translate(299.722 309.543)"
+                  opacity="0.5" />
+               <g
+                  id="bg-u-mug">
+                  <path
+                     id="bg-s-path106"
+                     d="M304.212,289.612l-20.243-.208c0,5.905,4.325,19.729,4.325,19.729h.025c.247.703,2.923,1.288,6.2,1.329c3.447.044,6.249-.53,6.258-1.281c0-.016-.008-.032-.011-.048h.011c.002.001,3.435-14.969,3.435-19.521Z"
+                     fill="url(#bg-s-path106-fill)" />
+                  <path
+                     id="bg-s-path107"
+                     d="M304.212,289.661c-.012.903-4.552,1.577-10.142,1.506s-10.112-.86-10.101-1.763c.012-.903,4.552-1.577,10.142-1.506s10.112.86,10.101,1.763Z"
+                     fill="url(#bg-s-path107-fill)" />
+                  <path
+                     id="bg-s-path108"
+                     d="M302.512,289.639c-.009.751-3.787,1.312-8.438,1.253s-8.413-.715-8.404-1.467c.009-.751,3.788-1.312,8.438-1.253c4.651.06,8.413.716,8.404,1.467Z"
+                     fill="url(#bg-s-path108-fill)" />
+                  <path
+                     id="bg-s-path109"
+                     d="M301.256,293.662c0,0,9.008-3.419,11.857-1.879s-4.02,12.481-7.023,13.587c-2.187.805-6.882-1.003-6.882-1.003l2.018-.147c0,0,2.295.993,4.411.35s5.832-10.049,5.024-11.764-8.286.856-8.286.856h-1.119Z"
+                     fill="url(#bg-s-path109-fill)" />
+                  <path
+                     id="bg-s-path110"
+                     d="M301.104,293.07c0,0,8.041-2.369,10.89-.828s-4.02,12.481-7.023,13.587c-2.187.805-5.763-.8-5.763-.8v-.661c0,0,3.193,1.304,5.31.661c2.116-.643,5.832-10.049,5.024-11.764s-8.286.856-8.286.856l-.152-1.051Z"
+                     fill="url(#bg-s-path110-fill)" />
+                  <path
+                     id="bg-s-path111"
+                     d="M301.104,293.07l2.926-1.01c0,0,6.57-1.424,9.083-.276l-1.12.458c.001,0-4.073-1.019-10.889.828Z"
+                     fill="url(#bg-s-path111-fill)" />
+                  <path
+                     id="bg-s-path112"
+                     d="M284.692,291.117c0,0,1.763,12.62,4.025,17.556l2.975.461c0,0-2.204-9.94-2.204-17.413c0,0-2.699-.051-4.796-.604Z"
+                     opacity="0.2"
+                     fill="url(#bg-s-path112-fill)" />
+                  <polygon
+                     id="bg-s-polygon127"
+                     points="301.256,294.12 303.48,295.783 303.862,293.346"
+                     opacity="0.5"
+                     fill="url(#bg-s-polygon127-fill)" />
+                  <polygon
+                     id="bg-s-polygon128"
+                     points="299.209,305.028 300.97,308.286 301.518,305.79"
+                     opacity="0.5"
+                     fill="url(#bg-s-polygon128-fill)" />
+                  <path
+                     id="bg-s-path113"
+                     d="M286.687,296.788c0,0,7.028,1.35,12.521-.258l-.846,7.199c0,0-5.415,1.847-10.17.068l-1.505-7.009Z"
+                     fill="url(#bg-s-path113-fill)" />
+               </g>
+            </g>
+            <g
+               id="bg-u-phone">
+               <polygon
+                  id="bg-s-polygon129"
+                  points="242.038,294.247 237.902,342.328 180.608,342.115 181.18,340.389 187.972,319.789 195.145,298.035 203.147,297.385 236.12,294.729"
+                  fill="url(#bg-s-polygon129-fill)" />
+               <polygon
+                  id="bg-s-polygon130"
+                  points="237.902,342.325 246.588,332.421 243.742,310.846 244.162,295.645 242.038,294.242"
+                  fill="#12002e" />
+               <polygon
+                  id="bg-s-polygon131"
+                  points="211.427,299.316 236.568,298.123 235.102,306.183 208.764,306.774"
+                  fill="url(#bg-s-polygon131-fill)" />
+               <polygon
+                  id="bg-s-polygon132"
+                  points="226.907,337.723 228.149,334.065 235.371,334.065 234.773,337.723"
+                  fill="#ff2e51" />
+               <polygon
+                  id="bg-s-polygon133"
+                  points="235.371,334.065 235.616,334.449 235.371,338.037 227.091,338.037 226.907,337.723 234.773,337.723"
+                  fill="#c01a40" />
+               <polygon
+                  id="bg-s-polygon134"
+                  points="187.635,332.421 197.23,298.447 225.389,296.696 205.705,298.93 192.192,317.968"
+                  opacity="0.5"
+                  fill="#fff" />
+               <polygon
+                  id="bg-s-polygon135"
+                  points="209.5,306.757 208.764,306.774 211.427,299.316 236.568,298.123 236.477,298.625 211.823,299.765"
+                  fill="#12002e" />
+               <polygon
+                  id="bg-s-polygon136"
+                  points="226.529,308.296 226.419,310.319 233.166,310.599 233.763,308.296"
+                  opacity="0.5"
+                  fill="#fff" />
+               <polygon
+                  id="bg-s-polygon137"
+                  points="225.417,310.48 225.619,308.415 217.657,308.415 217.396,310.352"
+                  opacity="0.5"
+                  fill="#fff" />
+               <polygon
+                  id="bg-s-polygon138"
+                  points="216.394,310.48 216.596,308.415 208.634,308.415 208.373,310.352"
+                  opacity="0.5"
+                  fill="#fff" />
+               <g
+                  id="bg-s-g31">
+                  <path
+                     id="bg-s-path114"
+                     d="M206.976,346.112c-7.183,0-14.726-4.934-15.093-5.178l.619-.934c.101.066,10.148,6.634,17.644,4.591c1.626-.443,2.677-1.146,3.112-2.061-1.514-.565-2.638-1.246-3.165-2.093-.388-.622-.463-1.301-.225-2.018.262-.791.881-1.209,1.64-1.108c1.312.164,2.946,1.91,3.088,3.915.013.175.014.369-.003.579c2.917.899,6.813,1.433,8.92,1.721c2.262.313,3.791-.123,4.671-.765-.898-1.052-1.384-2.006-1.428-2.095l-.252-.506.507-.248c1.59-.776,2.439-.177,2.73.117.562.566.644,1.496.208,2.369-.06.12-.131.24-.211.359.997.942,2.344,1.78,3.986,1.78.829,0,1.467-.213,1.898-.632-.118-.141-.23-.288-.335-.443-.756-1.117-1.01-2.413-.618-3.152.196-.368.54-.579.946-.579c1.088,0,1.738,1.317,1.738,2.59c0,.51-.101.996-.29,1.429.665.523,1.649.942,3.045.791c1.541-.165,2.469-.977,3.009-1.727-.827-.6-1.312-1.396-1.413-2.188-.133-1.049.446-1.899,1.476-2.165.547-.14,1.058.005,1.408.395.592.665.647,1.999.138,3.32-.025.064-.051.129-.078.192.522.198,1.165.324,1.939.324.991,0,1.6-.494,1.862-1.51.139-.537.159-1.112.109-1.659-.848-.66-1.405-1.313-1.626-1.847-.234-.564-.163-1.094.195-1.452.318-.317.757-.374,1.144-.152.639.369,1.137,1.56,1.331,2.857c2.023,1.42,5.639,2.834,10.039,2.834c3.735,0,6.172-1.038,7.552-2.072-.228-1.122-.043-2.214.492-2.756.328-.332.775-.447,1.224-.319.607.174.937.726.841,1.406-.08.574-.502,1.317-1.284,2.05.241.624.764,1.468,1.869,1.704c1.5.313,3.493-1.497,4.549-3.441.081-.149.159-.304.232-.462-.622-.459-1.055-1.092-1.304-1.732-.417-1.074-.431-2.429.352-2.94.075-.049.171-.099.286-.132-1.537-.685-3.46-1.278-5.734-1.617-1.42,1.785-5.083,2.357-8.482,2.263-1.777-.054-4.765-.326-4.816-1.551-.026-.63.364-1.35,5.35-1.915c2.671-.303,5.138-.271,7.351-.005.04-.115.066-.233.079-.355.041-.409-.086-.736-.404-1.031-2.76-2.563-16.555-.781-21.637.121l-.196-1.103c1.926-.342,18.926-3.245,22.596.161.572.531.833,1.211.756,1.966-.014.138-.038.272-.07.4c6.388,1.029,10.396,4.001,10.689,6.107.054.389.082,1.683-1.825,1.997-.761.124-1.424.066-1.992-.118-.075.159-.157.32-.245.482-1.267,2.33-3.658,4.445-5.769,4.002-1.125-.24-2.024-.981-2.543-2.074-1.656,1.138-4.269,2.087-7.918,2.087-4.234,0-7.699-1.212-9.954-2.584-.013.426-.065.835-.164,1.203-.399,1.49-1.442,2.31-2.937,2.31-.959,0-1.79-.171-2.481-.455-.886,1.29-2.266,2.123-3.877,2.297-1.44.149-2.76-.195-3.795-.978-.469.469-1.304.98-2.71.98-2.007,0-3.606-.984-4.763-2.079-1.097.862-2.931,1.418-5.601,1.057-3.314-.454-6.55-.983-9.035-1.746-.439,1.03-1.499,2.131-3.885,2.782-1.121.306-2.287.439-3.462.439Zm28.64-5.259c-.046.092-.085.767.397,1.65.047.086.106.186.177.294.028-.153.042-.312.042-.476.001-.862-.399-1.468-.616-1.468Zm-7.543-.145c.199.317.492.745.87,1.199.001-.003.003-.006.004-.009.214-.429.213-.862-.001-1.079-.172-.172-.487-.208-.873-.111Zm15.514-1.179c-.034,0-.075.005-.126.019-.643.166-.679.659-.644.938.05.397.319.901.848,1.328.005-.014.011-.027.016-.04.417-1.084.292-1.922.071-2.172-.026-.029-.066-.073-.165-.073Zm-32.299-1.111c-.13,0-.258.058-.357.355-.131.396-.096.737.113,1.071.38.61,1.276,1.134,2.44,1.58-.002-.039-.003-.079-.006-.119-.104-1.458-1.351-2.787-2.11-2.883-.027-.002-.054-.004-.08-.004Zm57.263-.729c-.028,0-.043.013-.066.035-.141.143-.257.508-.265.99.098-.126.177-.246.239-.357.226-.405.197-.619.178-.65-.04-.013-.066-.018-.086-.018Zm7.973-.342c.383.11.845.145,1.401.055.978-.161.92-.58.898-.737-.091-.654-.966-1.662-2.548-2.639.575.83.657,1.997.249,3.321Zm-1.783-3.194c-.083.092-.22.873.201,1.774.117.252.302.559.58.832.229-.894.203-1.76-.336-2.298-.297-.296-.444-.308-.445-.308Zm-17.913-2.021c1.411.521,6.161.836,9.193-.25.497-.178.909-.38,1.238-.605-1.911-.178-4.036-.175-6.363.087-2.494.283-3.592.58-4.068.768Z"
+                     fill="#12002e" />
+               </g>
+               <path
+                  id="bg-s-path115"
+                  d="M203.674,295.647l.857,1.716-7.022,43.371-1.351.481c-.001,0-.647-16.827,7.516-45.568Z"
+                  fill="#12002e" />
+               <path
+                  id="bg-s-path116"
+                  d="M203.674,295.648c-.179.56-.348,1.143-.527,1.737-2.163,7.543-3.867,18.033-5.055,26.865-1.266,9.437-1.939,16.969-1.939,16.969l-14.985-.751c0-.022.011-.056.011-.079c1.031-8.809,2.365-16.543,3.699-23.009c2.869-13.931,5.749-21.945,5.749-21.945l13.047.213Z"
+                  fill="url(#bg-s-path116-fill)" />
+               <path
+                  id="bg-s-path117"
+                  d="M182.594,336.117c0,0,2.858-26.653,8.932-39.457l11.046.563-2.842,8.906-9.971-.533c0,0-6.75,22.369-7.165,30.521Z"
+                  opacity="0.5"
+                  fill="#fff" />
+               <path
+                  id="bg-s-path118"
+                  d="M237.902,302.518c0,12.687-13.472,22.965-30.093,22.965-3.396,0-6.669-.426-9.717-1.233-3.766-.964-7.195-2.499-10.121-4.461-1.109-.74-2.141-1.535-3.093-2.41c2.869-13.931,5.749-21.945,5.749-21.945l13.046.213c-.179.56-.348,1.143-.527,1.737l32.973-2.656c1.156,2.433,1.783,5.056,1.783,7.79Z"
+                  opacity="0.2"
+                  fill="url(#bg-s-path118-fill)" />
+            </g>
+            </g>
+         </g>
+      </g>
+      </svg>
 
-<body class="bg-dark"> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <div class="space">
-        <!-- Adding objects like the earth, moon, rocket, stars and astronaut. -->
-        <div class="objects">
-            <div class="rocket">
-                <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">
-            </div>
-            
-            <div class="earth-moon">
-                <img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg" width="100px">
-                <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="80px">
-            </div>
-            
-            <div class="box_astronaut">
-                <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px">
-            </div>
-
-            <div class="glowing_stars">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-            </div>
-        </div>
     </div>
 
-    <!-- Adding launching soon message and countdown timer. -->
-    <div class="central-body text-center text-white">
-        <h1 id="msg1">Website is not ready, yet...</h1>
+    <!-- <div class="page page-Aboutme" style="background-color: #001b2e;">About me</div>
+    <div class="page page-LinkedIn" style="background-color: darkblue;">LinkedIn</div>
+    <div class="page page-Github" style="background-color: yellowgreen;">Github</div>
+    <div class="page page-Email" style="background-color: rosybrown;">Email</div>
+    <div class="page page-Portfolio" style="background-color: green;">Portfolio</div>
+    <div class="page page-Project" style="background-color: darkmagenta;">Project</div> -->
 
-        <!-- Creating a container to hold our countdown timer. -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <!-- Changing border color of container to match page background. -->
-                    <div class="card border-dark">
-                        <!-- Changing header color of container to match page background color. -->
-                        <div class="card-header bg-dark text-white">
-                            <h4 id="msg3" class="mb-0 text-center">We will launch in:</h4>
-                        </div>
-
-                        <!-- Changing body color of container to match page background color. -->
-                        <div class="card-body bg-dark text-white">
-                            <div class="row text-center">
-                                <!-- Formatting the coundown timer. -->
-                                <div class="col-3">
-                                    <h3 id="days" class="display-4">00</h3>
-                                    <p>Days</p>
-                                </div>
-
-                                <div class="col-3">
-                                    <h3 id="hours" class="display-4">00</h3>
-                                    <p>Hours</p>
-                                </div>
-
-                                <div class="col-3">
-                                    <h3 id="minutes" class="display-4">00</h3>
-                                    <p>Minutes</p>
-                                </div>
-
-                                <div class="col-3">
-                                    <h3 id="seconds" class="display-4">00</h3>
-                                    <p>Seconds</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h3 id="msg2">For now, you may view a <a href='index2.html'>demo</a> version</h3>
-    </div>
-
-    <!-- A script to ensure our countdown timer works. -->
-    <script>
-        // Setting the launch date (October 10)
-        const launchDate = new Date("Nov 10, 2024 10:00:00").getTime();
-
-        // Updating the countdown every 1 second
-        const x = setInterval(function() {
-            // Getting today's date and time
-            const now = new Date().getTime();
-
-            // Finding the distance between now and the launch date
-            const distance = launchDate - now;
-
-            // Adjusting units
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Displaying the results
-            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-            // If the countdown is finished:
-            if (distance<0) {
-                clearInterval(x);
-                document.getElementById("days").innerHTML = "00";
-                document.getElementById("hours").innerHTML = "00";
-                document.getElementById("minutes").innerHTML = "00";
-                document.getElementById("seconds").innerHTML = "00";
-                
-                document.getElementById("msg1").innerHTML = "The time has come";
-                document.getElementById("msg2").innerHTML = "Thank you for your patience";
-                document.getElementById("msg3").innerHTML = "You may now view a <a href='index2.html'>demo</a> version";
-            }
-        }, 1000);
-    </script>
 </body>
-    
+
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: bisque;
+   }
+
+   body{
+      cursor: url(cursor.svg), auto;
+   }
+
+   .page {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+   }
+   
+   h1 {
+      color: white;
+      font-family: arial;
+      font-weight: bold;
+      font-size: 3em;
+   }
+   .page-Home {
+      display: grid;
+      place-items: center;
+      z-index: 0;
+      /* cursor: url(magnifier-small.svg), auto; */
+   }
+   
+   #bg {
+      height: 100vh;
+      size: cover;
+   }
+
+   a {
+      cursor: url(magnifier-big.svg), auto;
+   }
+
+   #bg-u-project:hover #bg-s-path133, #bg-u-project:hover #bg-s-path137{
+      opacity: 30%;
+   }
+
+   #bg-u-portfolio:hover #bg-s-path139, #bg-u-portfolio:hover #bg-s-path143{
+      opacity: 30%;
+   }
+
+</style>
+
 </html>
