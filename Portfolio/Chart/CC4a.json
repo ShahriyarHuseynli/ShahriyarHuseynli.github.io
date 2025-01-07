@@ -9,6 +9,10 @@
         {"year": 2023, "price": 1010000}
       ]
     },
+    "background": "#b7b7b7",
+    "view": {
+      "fill": "lightgray"
+    },
     "width": 300,
     "height": 200,
     "title": {
@@ -30,7 +34,8 @@
           "values": [775000, 850000, 925000, 1000000, 1075000, 1150000, 1225000, 1300000, 1375000],
           "format": "$,f",
           "title":null,
-          "labelFontStyle": "bold"
+          "labelFontStyle": "bold",
+          "gridColor": "darkgray"
         }
       },
       "x": {
