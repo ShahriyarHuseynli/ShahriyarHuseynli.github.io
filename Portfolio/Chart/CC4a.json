@@ -35,7 +35,8 @@
           "format": "$,f",
           "title":null,
           "labelFontStyle": "bold",
-          "gridColor": "darkgray"
+          "gridColor": "darkgray",
+          "gridDash": [1, 1]
         }
       },
       "x": {
