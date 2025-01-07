@@ -1,1 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
+    <!-- Now I link javascript CDN for Vega-Lite to work-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html" class="sticky-button"><img src="https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/back_button.svg" alt="Back"></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Portfolio</h1>
+        <p>
+            Here you can find the coding challenges I have been doing over the term.
+        </p>
+        <section>
+            <h4 class="chart-title">CC 1: Hosting. Display charts in your own site:</h4>
+            <h5 class="chart-description">GDP vs Life expectancy</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC1a"></figure>
+            </div>
+        </section>
+        
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">Cumulative % change in population</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC1b"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title">CC 2: Building. Create your own visualisations:</h4>
+            <h5 class="chart-description">Food-Greenhouse gas emissions</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC2a"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">Unemployment in Russia</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC2b"></figure>
+            </div>
+        </section>
+        
+        <section>
+            <h4 class="chart-title">CC 3: Debating. Use a visualization in economic/policy commentary</h4>
+            <h5 class="chart-description"></h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC3a"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description"></h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC3b"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title">CC 4: Replication. Re-create, then improve, someone else’s chart</h4>
+            <h5 class="chart-description"></h5>
+            <p>I am not sure where this chart is from but I just could not resist uploading it. I assume it is from a Canadian journal/book.</p>
+            <div class="chart-container">
+                <img id="bad_chart" src="/Chart/bad_chart.webp" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">Repllicating:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC4a"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">Improving:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC4a"></figure>
+            </div>
+            <p>I have changed chart to bubble chart to illustrate more than 2 variables and reset axes to avoid overrepresentation.</p>
+        </section>
+
+        <section>
+            <h4 class="chart-title">CC 5: Scraper. Implement a data scraper of your own</h4>
+            <h5 class="chart-description"></h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC5"></figure>
+            </div>
+            <p>I have <a href="https://colab.research.google.com/drive/180eltR48f9x3bLr6vuw1WQMZisFzlaS0?usp=sharing">scraped</a> the World Nuclear Association website because my project will be on Nuclear energy.</p>
+        </section>
+
+        <section>
+            <h4 class="chart-title">CC 6: Loops. Build a Dashboard</h4>
+            <h5 class="chart-description"></h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6a"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6b"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6c"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6d"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6e"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6f"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6g"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6h"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title"></h4>
+            <h5 class="chart-description">:</h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC6i"></figure>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="chart-title">CC 7: Maps. Base maps and choropleths</h4>
+            <h5 class="chart-description"></h5>
+            <div class="chart-container">
+                <figure class="chart chart-desktop" id="CC7a"></figure>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<script>
+    vegaEmbed('#CC1a', "/Portfolio/Charts/CC1a.json")
+    vegaEmbed('#CC1b', "/Portfolio/Charts/CC1b.json")
+
+    vegaEmbed('#CC2a', "/Portfolio/Charts/CC2a.json")
+    vegaEmbed('#CC2b', "/Portfolio/Charts/CC2b.json")
+
+    vegaEmbed('#CC3a', "/Portfolio/Charts/CC3a.json")
+    vegaEmbed('#CC3b', "/Portfolio/Charts/CC3b.json")
+
+    vegaEmbed('#CC4a', "/Portfolio/Charts/CC4a.json")
+    vegaEmbed('#CC4b', "/Portfolio/Charts/CC4b.json")
+    
+    vegaEmbed('#CC5', "/Portfolio/Charts/CC5.json")
+
+    vegaEmbed('#CC6a', "/Portfolio/Charts/CC6a.json")
+    vegaEmbed('#CC6b', "/Portfolio/Charts/CC6b.json")
+    vegaEmbed('#CC6c', "/Portfolio/Charts/CC6c.json")
+    vegaEmbed('#CC6d', "/Portfolio/Charts/CC6d.json")
+    vegaEmbed('#CC6e', "/Portfolio/Charts/CC6e.json")
+    vegaEmbed('#CC6f', "/Portfolio/Charts/CC6f.json")
+    vegaEmbed('#CC6g', "/Portfolio/Charts/CC6g.json")
+    vegaEmbed('#CC6h', "/Portfolio/Charts/CC6h.json")
+    vegaEmbed('#CC6i', "/Portfolio/Charts/CC6i.json")
+
+
+
+</script>
+
+<style>
+    body {
+        background-color: #f9f9f9;
+    }
+    .content {
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .sticky-button {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px; /* Set a specific width */
+        height: 20px; /* Set a specific height */
+        padding: 0; /* Remove default padding */
+    }
+
+    .sticky-button img {
+        width: 15%; /* Ensure the image fits the button */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h2, h3, h4, h5, p {
+        text-align: left;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-family: sans-serif;
+    }
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: 0.9em;
+    }
+
+    body nav {
+        position: sticky;
+        top: 0;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        padding: 20px;
+        background: transparent;
+        list-style-type: none;
+    }
+    .chart-description {
+        color: #666;
+        margin-top: 0.5em;
+        margin-bottom: 0em;
+        text-align: center;
+        font-style: italic;
+
+    }
+    .chart-title {
+        color: #000000;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    
+    #bad_chart {
+        width: 450px;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 719px) {
+        .chart-desktop {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 720px) {
+        .chart-mobile {
+            display: none;
+        }
+    }
+
+</style>
+</html>
