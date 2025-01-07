@@ -15,12 +15,11 @@
     <nav>
         <ul>
             <li>
-                <a href="">back</a>
+                <a href="../index.html" class="sticky-button"><img src="main/back_button.svg" alt="Back"></a>
             </li>
         </ul>
     </nav>
     <div class="content">
-        <!-- 1. description of the chart and aim of the analysis \n2. the data you used, how you accessed it, including notes on automation/replication; PROJECT TIP: you should comment on your data sources. This should go beyond simply stating the source, "World Bank, 2020". In a DS project you should know in detail how the data are collected and how reliable they are. \n3. challenges in data cleaning and/or analysis, and the tools you used to overcome them -->
         <h1>A nuclear comeback?</h1>
         <h2>Aims:</h2>
         <p>
@@ -157,7 +156,7 @@
 </body>
 
 <script>
-    vegaEmbed('#reliability_safety_figD', "/Project/Charts//Project/Charts/Project_Chart1D.json")
+    vegaEmbed('#reliability_safety_figD', "/Project/Charts/Project_Chart1D.json")
     vegaEmbed('#reliability_safety_figM', "/Project/Charts/Project_Chart1M.json")
 
     vegaEmbed('#LCOE_figD', "/Project/Charts/Project_Chart2D.json")
@@ -178,14 +177,33 @@
 </script>
 
 <style>
+    body {
+        background-color: #f9f9f9;
+    }
     .content {
         max-width: 80%;
         margin: auto;
         text-align: center;
     }
+    .sticky-button {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px; /* Set a specific width */
+        height: 20px; /* Set a specific height */
+        padding: 0; /* Remove default padding */
+    }
+
+    .sticky-button img {
+        width: 15%; /* Ensure the image fits the button */
+        height: auto; /* Maintain aspect ratio */
+    }
 
     h2, h3, h4, h5, p {
-        text-align: justify;
+        text-align: left;
         font-family: sans-serif;
     }
 
@@ -212,6 +230,7 @@
         box-sizing: border-box;
         padding: 20px;
         background: transparent;
+        list-style-type: none;
     }
     .chart-description {
         color: #666;
@@ -226,6 +245,7 @@
         margin-bottom: 1em;
         text-align: center;
     }
+
     @media only screen and (max-width: 719px) {
         .chart-desktop {
             display: none;
