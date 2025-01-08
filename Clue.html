@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clue</title>
 
+    <!-- Now I link javascript CDN for Vega-Lite to work-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
 </head>
 <body>
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="sticky-button"><img src="https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/back_button.svg" alt="Back"></a>
+                <a href="/index.html" class="sticky-button"><img src="https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/back_button.svg" alt="Back"></a>
             </li>
         </ul>
     </nav>
@@ -32,12 +37,30 @@
         </div>
     </div>
 </body>
-
 <style>
+    body {
+        background-color: #f9f9f9;
+    }
     .content {
         max-width: 80%;
         margin: auto;
         text-align: center;
+    }
+    .sticky-button {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        width: 20px; /* Set a specific width */
+        height: 20px; /* Set a specific height */
+        padding: 0; /* Remove default padding */
+    }
+
+    .sticky-button img {
+        width: 15%; /* Ensure the image fits the button */
+        height: auto; /* Maintain aspect ratio */
     }
 
     h2, h3, h4, h5, p {
@@ -60,29 +83,28 @@
         position: sticky;
         top: 0;
     }
-    .sticky-button {
-        position: sticky;
-        top: 0;
-        left: 0;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        width: 20px; /* Set a specific width */
-        height: 20px; /* Set a specific height */
-        padding: 0; /* Remove default padding */
-    }
-
-    .sticky-button img {
-        width: 15%; /* Ensure the image fits the button */
-        height: auto; /* Maintain aspect ratio */
-    }
 
     ul {
         width: 100%;
-        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        box-sizing: border-box;
         padding: 20px;
         background: transparent;
         list-style-type: none;
+    }
+    .chart-description {
+        color: #666;
+        margin-top: 0.5em;
+        margin-bottom: 0em;
+        text-align: center;
+        font-style: italic;
+
+    }
+    .chart-title {
+        color: #000000;
+        margin-bottom: 1em;
+        text-align: center;
     }
 
 </style>
