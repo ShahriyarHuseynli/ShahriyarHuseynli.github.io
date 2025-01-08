@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "repeat": ["England all", "England male", "England female", "Wales all", "Wales male", "Wales female", "Scotland all", "Scotland male", "Scotland female"],
+  "columns": 3,
+  "spec": {
+    "width": 200,
+    "height": 200,
+    "data": {"url": "https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/Portfolio/Data/dashboard.csv"},
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": {
+          "repeat": "repeat"
+        },
+        "type": "quantitative",
+          "scale": {
+            "domain": [0, 15]
+          }
+        }
+    }
+  }
+}
