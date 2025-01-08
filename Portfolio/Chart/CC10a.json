@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/ShahriyarHuseynli/ShahriyarHuseynli.github.io/refs/heads/main/Portfolio/Data/dashboard.csv"},
+  "width": 400,
+    "transform": [
+    {"filter": "datum.year>946684800000"}
+  ],
+  "layer": [{
+    "params": [{
+      "name": "brush",
+      "select": {"type": "interval", "encodings": ["x"]}
+    }],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "timeUnit": "year",
+        "field": "year",
+        "type": "ordinal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "England all",
+        "type": "quantitative",
+        "axis": {
+          "title": "Unemployment rate (%)"
+        }
+      },
+      "opacity": {
+        "condition": {
+          "param": "brush", "value": 1
+        },
+        "value": 0.7
+      }
+    }
+  }, {
+    "transform": [{
+      "filter": {"param": "brush"}
+    }],
+    "mark": "rule",
+    "encoding": {
+      "y": {
+        "aggregate": "mean",
+        "field": "England all",
+        "type": "quantitative"
+      },
+      "color": {"value": "firebrick"},
+      "size": {"value": 3}
+    }
+  }]
+}
